@@ -1,0 +1,25 @@
+{
+  "name": "portfolio_v02",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elanalynn/portfolio_2016_fall.git"
+  },
+  "author": "Elana Kopelevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elanalynn/portfolio_2016_fall/issues"
+  },
+  "homepage": "https://github.com/elanalynn/portfolio_2016_fall#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.14",
+    "gulp-sass": "^2.3.2"
+  }
+}

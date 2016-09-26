@@ -1,0 +1,18 @@
+<article class="content">
+  <section>
+    <h2>Your Life in Weeks</h2>
+    <p class="strong">Built November 2015</p>
+    <p class="italic">{{ projects[2].technologies }}</p>
+
+    <button class="button hollow"><a href="{{ projects[2].liveURL }}" target="_blank">Live</a></button>
+    <button class="button hollow"><a href="{{ projects[2].github }}" target="_blank">GitHub</a></button>
+
+    <p>Some time ago, I came across a graphical visualization of a life in weeks via<a href="http://waitbutwhy.com/2014/05/life-weeks.html" target="_blank"> waitbutwhy.com</a>. Weeks were represented by simple squares, arranged in rows of 52 to represent a year. I fell in love with the diagram so I immediately printed the page and started marking it up. It wasn’t long before I hit the inevitable limitation of interactivity that comes with a sheet of paper. I thought, wouldn’t this be cool if it was a web application? This is my attempt at making “Your Life in Weeks” interactive.</p>
+    <p>I created this for a front-end assignment in the fifth week of bootcamp. I used Bootstrap, jQuery and localStorage to persist the life events to the best of my ability at the time. I am currently working on rewriting this project as a full stack application.</p>
+
+    <iframe class="project-asset" width="420" height="315" src="https://www.youtube.com/embed/lf53EPZKexE" frameborder="0" allowfullscreen></iframe>
+  </section>
+  <section>
+    <button class="button secondary hollow"><a ui-sref="projects">Back to project list.</a></button>
+  </section>
+</article>

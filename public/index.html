@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" ng-app="portfolioApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Elana Kopelevich - Web Developer and Designer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Elana Kopelevich - Web Developer and Designer</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-amber.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/stylesheets/styles.css" />
+</head>
+
+<body ng-controller="MainController as main">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+      <div class="mdl-layout__header-row portfolio-logo-row">
+        <img class="portfolio-logo" src="assets/images/logo.png" alt="Elana Kopelevich logo" />
+      </div>
+      <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" ui-sref="about">About</a>
+          <a class="mdl-navigation__link" ui-sref="projects">Projects</a>
+          <a class="mdl-navigation__link" ui-sref="blog">Blog</a>
+          <a class="mdl-navigation__link" ui-sref="illustrations">Illustrations</a>
+          <a class="mdl-navigation__link" ui-sref="contact">Contact</a>
+          <a class="mdl-navigation__link" ui-sref="resources">Resources</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" ui-sref="about">About</a>
+        <a class="mdl-navigation__link" ui-sref="projects">Projects</a>
+        <a class="mdl-navigation__link" ui-sref="blog">Blog</a>
+        <a class="mdl-navigation__link" ui-sref="illustrations">Illustrations</a>
+        <a class="mdl-navigation__link" ui-sref="contact">Contact</a>
+        <a class="mdl-navigation__link" ui-sref="resources">Resources</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content" ui-view>{{ main.thing }}</main>
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Elana Lynn Kopelevich</div>
+        </div>
+        <div class="mdl-mini-footer__right-section">
+            <ul class="mdl-mini-footer__link-list">
+                <li><a ui-sref="contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+  </div>
+  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+  <script type="text/javascript" src="javascripts/config.js"></script>
+  <script type="text/javascript" src="javascripts/controllers/MainController.js"></script>
+  <script type="text/javascript" src="javascripts/controllers/AboutController.js"></script>
+  <script type="text/javascript" src="javascripts/controllers/BlogController.js"></script>
+  <script type="text/javascript" src="javascripts/controllers/ProjectsController.js"></script>
+  <script type="text/javascript" src="javascripts/controllers/IllustrationsController.js"></script>
+  <script type="text/javascript" src="javascripts/controllers/ContactController.js"></script>
+  <script type="text/javascript" src="javascripts/controllers/ResourcesController.js"></script>
+  <script type="text/javascript" src="javascripts/services/projectsService.js"></script>
+  <script type="text/javascript" src="javascripts/services/illustrationsService.js"></script>
+  <script type="text/javascript" src="javascripts/app.js"></script>
+
+</body>
+</html>
