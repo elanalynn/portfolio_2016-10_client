@@ -4,7 +4,5 @@ angular
   .controller('MainController', MainController)
   .controller('AboutController', AboutController)
   .controller('ProjectsController', ProjectsController)
-  .controller('IllustrationsController', IllustrationsController)
   .controller('ContactsController', ContactController)
   .factory('projectsService', projectsService)
-  .factory('illustrationsService', illustrationsService)

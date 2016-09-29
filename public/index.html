@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-amber.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/stylesheets/styles.css" />
+  <link rel="stylesheet" href="/stylesheets/animations.css" />
 </head>
 
 <body ng-controller="MainController as main">
@@ -22,9 +23,9 @@
       <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" ui-sref="about">About</a>
-          <a class="mdl-navigation__link" ui-sref="projects">Projects</a>
-          <a class="mdl-navigation__link" ui-sref="blog">Blog</a>
-          <a class="mdl-navigation__link" ui-sref="illustrations">Illustrations</a>
+          <a class="mdl-navigation__link is-active " ui-sref="projects">Projects</a>
+          <a class="mdl-navigation__link" href="http://reasonabout.co" target="_blank">Blog</a>
+          <a class="mdl-navigation__link" href="http://elana.kopelevich.org" target="_blank">Art</a>
           <a class="mdl-navigation__link" ui-sref="contact">Contact</a>
           <a class="mdl-navigation__link" ui-sref="resources">Resources</a>
         </nav>
@@ -33,23 +34,21 @@
     <div class="mdl-layout__drawer mdl-layout--small-screen-only">
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" ui-sref="about">About</a>
-        <a class="mdl-navigation__link" ui-sref="projects">Projects</a>
-        <a class="mdl-navigation__link" ui-sref="blog">Blog</a>
-        <a class="mdl-navigation__link" ui-sref="illustrations">Illustrations</a>
+        <a class="mdl-navigation__link is-active " ui-sref="projects">Projects</a>
+        <a class="mdl-navigation__link" href="http://reasonabout.co" target="_blank">Blog</a>
+        <a class="mdl-navigation__link" href="http://elana.kopelevich.org" target="_blank">Art</a>
         <a class="mdl-navigation__link" ui-sref="contact">Contact</a>
         <a class="mdl-navigation__link" ui-sref="resources">Resources</a>
       </nav>
     </div>
     <main class="mdl-layout__content" ui-view>{{ main.thing }}</main>
     <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-            <div class="mdl-logo">Elana Lynn Kopelevich</div>
-        </div>
-        <div class="mdl-mini-footer__right-section">
-            <ul class="mdl-mini-footer__link-list">
-                <li><a ui-sref="contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="mdl-mini-footer__left-section">
+        <p>Elana Lynn Kopelevich</p>
+      </div>
+      <div class="mdl-mini-footer__right-section">
+        <p><a class="mdl-navigation__link" ui-sref="contact">Contact</a></p>
+      </div>
     </footer>
   </div>
   <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
@@ -59,13 +58,10 @@
   <script type="text/javascript" src="javascripts/config.js"></script>
   <script type="text/javascript" src="javascripts/controllers/MainController.js"></script>
   <script type="text/javascript" src="javascripts/controllers/AboutController.js"></script>
-  <script type="text/javascript" src="javascripts/controllers/BlogController.js"></script>
   <script type="text/javascript" src="javascripts/controllers/ProjectsController.js"></script>
-  <script type="text/javascript" src="javascripts/controllers/IllustrationsController.js"></script>
   <script type="text/javascript" src="javascripts/controllers/ContactController.js"></script>
   <script type="text/javascript" src="javascripts/controllers/ResourcesController.js"></script>
   <script type="text/javascript" src="javascripts/services/projectsService.js"></script>
-  <script type="text/javascript" src="javascripts/services/illustrationsService.js"></script>
   <script type="text/javascript" src="javascripts/app.js"></script>
 
 </body>

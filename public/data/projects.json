@@ -1,5 +1,13 @@
 [
   {
+    "thumbnail": "../assets/images/collabowrite_thumbnail.png",
+    "name": "CollaboWrite",
+    "technologies": "['Ember', 'Express', 'Node', 'Google OAuth', 'PostgreSQL', 'JSON API']",
+    "description": "CollaboWrite is collaborative story telling platform that allows users to write and illustrate collaborative stories.",
+    "github": "https://github.com/elanalynn/collabowrite",
+    "demoURL": "https://collabowrite.co",
+    "details": "/collabowrite"
+  },{
     "thumbnail": "../assets/images/stumblr-thumbnail.jpg",
     "name": "Stumblr",
     "technologies": "['React', 'Express', 'Twitter OAuth', 'MongoDB', 'Bootstrap']",
@@ -31,5 +39,13 @@
     "github": "https://github.com/ekopelevich/reasonAbout",
     "demoURL": "http://reasonabout.co",
     "details": "/reasonabout"
+  },{
+    "thumbnail": "../assets/images/portfolio-thumbnail.jpg",
+    "name": "Portfolio",
+    "technologies": "['Angular', 'Material Design Lite']",
+    "description": "This is meta, but I'm talking about this portfolio, right here. It was built with Angular, using John Papa's style guide.",
+    "github": "https://github.com/ekopelevich/portfolio_v2",
+    "demoURL": "http://elanalynn.com",
+    "details": "/portfolio"
   }
 ]

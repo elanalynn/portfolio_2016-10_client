@@ -50,16 +50,16 @@ function config($stateProvider, $urlRouterProvider) { //$locationProvider
     controller: 'ProjectsController',
     controllerAs: 'vm',
   })
-  .state('illustrations', {
-    url: '/projects/illustrations',
-    templateUrl: 'partials/illustrations.html',
-    controller: 'IllustrationsController',
-    controllerAs: 'vm',
-  })
   .state('contact', {
     url: '/projects/contact',
     templateUrl: 'partials/contact.html',
     controller: 'ContactController',
+    controllerAs: 'vm',
+  })
+  .state('resources', {
+    url: '/projects/resources',
+    templateUrl: 'partials/resources.html',
+    controller: 'ResourcesController',
     controllerAs: 'vm',
   })
 }
