@@ -24,7 +24,7 @@ main {
 }
 
 .portfolio-logo-row {
-  display: flex;
+  display: absolute;
   min-height: 200px;
 }
 
