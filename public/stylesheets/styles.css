@@ -30,6 +30,7 @@ main {
 
 .is-compact .portfolio-logo-row {
   min-height: auto;
+  display: hidden;  
 }
 
 .portfolio-logo {

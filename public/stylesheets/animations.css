@@ -43,7 +43,7 @@
     transform: rotateZ(0deg);
 }
   100% {
-    left: 600px;
+    left: 50vw;
     transform: rotateZ(405deg);
   }
 }
