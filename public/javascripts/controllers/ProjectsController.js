@@ -1,6 +1,5 @@
 function ProjectsController(projectsService){
   var vm = this
-  vm.thing = 'elaalalala'
   vm.projectList = getProjects()
 
   function getProjects() {
