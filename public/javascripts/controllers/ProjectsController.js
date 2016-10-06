@@ -6,7 +6,6 @@ function ProjectsController(projectsService){
   function getProjects() {
     return projectsService.readData()
       .then(projects => {
-        console.log('projects', projects)
         vm.projectList = projects.data
       })
   }

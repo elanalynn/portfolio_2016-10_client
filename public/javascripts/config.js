@@ -1,4 +1,5 @@
-function config($stateProvider, $urlRouterProvider) { //$locationProvider
+function config($stateProvider, $urlRouterProvider) {
+  //$locationProvider - inject
   // $locationProvider.html5Mode(true)
   $urlRouterProvider.otherwise('/projects')
   $stateProvider

@@ -30,7 +30,7 @@ main {
 
 .is-compact .portfolio-logo-row {
   min-height: auto;
-  display: hidden;  
+  display: hidden;
 }
 
 .portfolio-logo {
@@ -66,12 +66,12 @@ main {
   background-color: rgba(197, 197, 197, 0.8);
 }
 
-.portfolio-navigation-row .is-active {
+.portfolio-navigation-row .active {
   position: relative;
   color: #ffd600;
 }
 
-.portfolio-navigation-row .is-active:after {
+.portfolio-navigation-row .active:after {
   content: "";
   width: 70%;
   height: 2px;
