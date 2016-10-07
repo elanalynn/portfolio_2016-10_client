@@ -17,16 +17,16 @@
         <p>Submit questions, comments, praise and criticism here.</p>
         <form action="/messages" method="POST">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" ng-model="contact.name">
             <label class="mdl-textfield__label" for="Name">Name</label>
             <span class="mdl-textfield__error">Letters and spaces only</span>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="Email">
+            <input class="mdl-textfield__input" type="text" ng-model="contact.email">
             <label class="mdl-textfield__label" for="Email">Email</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
+            <textarea class="mdl-textfield__input" type="text" rows="5" ng-model="contact.note"></textarea>
             <label class="mdl-textfield__label" for="note">Note</label>
           </div>
           <p>

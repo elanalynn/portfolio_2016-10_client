@@ -1,4 +1,8 @@
-function ContactController() {
+function ContactController(submitMessage) {
   var vm = this
-  vm.thing = 'contact controller'
+  vm.message = {
+    name: '',
+    email: '',
+    note: '',
+  }
 }
