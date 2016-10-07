@@ -88,9 +88,13 @@ main {
   display: flex;
 }
 
+.portfolio-card h2{
+  margin-top: 50px;
+}
+
 .mdl-card__supporting-text {
   height: 100%;
-  min-height: 140px;
+  min-height: 50px;
 }
 
 .mdl-card__actions {
@@ -197,6 +201,5 @@ footer {
 }
 
 .elk-project-button {
-  margin-left: 30px;
-  /*margin-right: -20px;*/
+  margin-right: 15px;
 }

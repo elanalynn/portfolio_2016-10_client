@@ -10,9 +10,9 @@
         <p class="strong">Built February 2016</p>
         <p class="italic">{{ projects[0].technologies }}</p>
       </section>
-      <section class="mdl-cell--1-offset mdl-cell--2-col">
-        <a href="{{ projects[0].liveURL }}" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored elk-project-button" target="_blank"><i class="material-icons">pregnant_woman</i></a>
-        <a href="{{ projects[0].github }}" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored"target="_blank"><i class="material-icons">pets</i></a>
+      <section class="mdl-cell--1-offset mdl-cell--3-col">
+        <a href="{{vm.projectList[1].demoURL}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent elk-project-button" target="_blank">Live</a>
+        <a href="{{vm.projectList[1].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Github</a>
       </section>
     </div>
     <div class="mdl-grid">

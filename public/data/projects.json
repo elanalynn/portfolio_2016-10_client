@@ -13,15 +13,15 @@
     "technologies": "['React', 'Express', 'Twitter OAuth', 'MongoDB', 'Bootstrap']",
     "description": "Stumblr is pub crawl planning app that maps a barhopping route based on your current location or a specific address.",
     "github": "https://github.com/designatedDrinkers/stumblr",
-    "demoURL": "/stumblr/demo",
+    "demoURL": "#",
     "details": "stumblr"
   },{
     "thumbnail": "../assets/images/planit-thumbnail.jpg",
     "name": "Planit",
     "technologies": "['JavaScript', 'jQuery', 'Node', 'Express', 'PostgreSQL', 'Knex', 'LinkedIn OAuth', 'Bootstrap']",
     "description": "Planit is an event human resources marketplace. As a user, you act as an event owner or contributor. As an owner, you can create events, add tasks, review (and accept or reject) proposals.",
-    "github": "https://github.com/skuttleman/planit-server",
-    "demoURL": "/planit/demo",
+    "github": "https://github.com/elanalynn/Planit",
+    "demoURL": "http://planit.space",
     "details": "planit"
   },{
     "thumbnail": "../assets/images/weeks-thumbnail.jpg",
