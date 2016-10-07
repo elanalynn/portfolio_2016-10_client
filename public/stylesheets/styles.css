@@ -2,7 +2,7 @@ body {
   display: flex;
   background-color: #e5c217;
   font-family: 'Lato', sans-serif;
-  background-image: url(../assets/images/body-bg.png);
+  background-image: url(../assets/main/body-bg.png);
 }
 
 main {
@@ -11,7 +11,7 @@ main {
 }
 
 .portfolio-header {
-  background-image: url(../assets/images/header-bg.png);
+  background-image: url(../assets/main/header-bg.png);
   background-size: cover;
   color: #fff;
 }
@@ -115,19 +115,19 @@ main {
   padding-bottom: 0;
 }
 
-.portfolio-blog-card-full-bg {
-  background: url(../assets/images/example-blog03.jpg) center / cover;
+.resource-card-full-bg {
+  background: url(../assets/resources/example-blog03.jpg) center / cover;
 }
 
-.portfolio-blog-card-event-bg {
-  background: url(../assets/images/example-blog05.jpg) center / cover;
+.resource-card-event-bg {
+  background: url(../assets/resources/example-blog05.jpg) center / cover;
 }
 
-.portfolio-blog-card-strip-bg {
-  background: url(../assets/images/example-blog06.jpg) center / cover;
+.resource-card-strip-bg {
+  background: url(../assets/resources/example-blog06.jpg) center / cover;
 }
 
-.portfolio-blog-card-compact .mdl-card__title {
+.resource-card-compact .mdl-card__title {
   padding-bottom: 0;
 }
 
@@ -139,10 +139,6 @@ img.article-image {
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
-}
-
-.portfolio-copy {
-  max-width: 700px;
 }
 
 .no-padding {
@@ -188,7 +184,7 @@ img.article-image {
 }
 
 footer {
-  background-image: url(../assets/images/footer-background.png);
+  background-image: url(../assets/main/footer-background.png);
   background-size: cover;
   display: flex;
   align-items: stretch;
@@ -198,6 +194,7 @@ footer {
 .demo-card-wide__custom {
   width: 100%;
   max-width: 1024px;
+  margin-top: 20px;
 }
 
 .elk-project-button {

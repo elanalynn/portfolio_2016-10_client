@@ -1,6 +1,6 @@
 [
   {
-    "thumbnail": "../assets/images/collabowrite_thumbnail.png",
+    "thumbnail": "../assets/projects/collabowrite_thumbnail.png",
     "name": "CollaboWrite",
     "technologies": "['Ember', 'Express', 'Node', 'Google OAuth', 'PostgreSQL', 'JSON API']",
     "description": "CollaboWrite is collaborative story telling platform that allows users to write and illustrate collaborative stories.",
@@ -8,7 +8,7 @@
     "demoURL": "https://collabowrite.co",
     "details": "collabowrite"
   },{
-    "thumbnail": "../assets/images/stumblr-thumbnail.jpg",
+    "thumbnail": "../assets/projects/stumblr-thumbnail.jpg",
     "name": "Stumblr",
     "technologies": "['React', 'Express', 'Twitter OAuth', 'MongoDB', 'Bootstrap']",
     "description": "Stumblr is pub crawl planning app that maps a barhopping route based on your current location or a specific address.",
@@ -16,7 +16,7 @@
     "demoURL": "#",
     "details": "stumblr"
   },{
-    "thumbnail": "../assets/images/planit-thumbnail.jpg",
+    "thumbnail": "../assets/projects/planit-thumbnail.jpg",
     "name": "Planit",
     "technologies": "['JavaScript', 'jQuery', 'Node', 'Express', 'PostgreSQL', 'Knex', 'LinkedIn OAuth', 'Bootstrap']",
     "description": "Planit is an event human resources marketplace. As a user, you act as an event owner or contributor. As an owner, you can create events, add tasks, review (and accept or reject) proposals.",
@@ -24,7 +24,7 @@
     "demoURL": "http://planit.space",
     "details": "planit"
   },{
-    "thumbnail": "../assets/images/weeks-thumbnail.jpg",
+    "thumbnail": "../assets/projects/weeks-thumbnail.jpg",
     "name": "Your Life in Weeks",
     "technologies": "['JavaScript', 'jQuery', 'Bootstrap', 'localStorage', 'Google Maps API']",
     "description": "An interactive visualization of a life in weeks. Save important events from each week of your life and see how they populate a grid of your life.",
@@ -32,17 +32,17 @@
     "demoURL": "/weeks/demo",
     "details": "weeks"
   },{
-    "thumbnail": "../assets/images/reasonabout-thumbnail.jpg",
+    "thumbnail": "../assets/projects/reasonabout-thumbnail.jpg",
     "name": "Reason About",
     "technologies": "['Jekyll']",
-    "description": "I created this group blog as a channel for me and my peers to collaborate on blogging. The original incarnatipn was built Jekyll. Version two is a customized WordPress site.",
+    "description": "I created this group blog as a channel for me and my peers to collaborate on blogging. The original incarnation was built Jekyll. Version two is a customized WordPress site.",
     "github": "https://github.com/ekopelevich/reasonAbout",
     "demoURL": "http://reasonabout.co",
     "details": "reasonabout"
   },{
-    "thumbnail": "../assets/images/portfolio-thumbnail.jpg",
+    "thumbnail": "../assets/projects/portfolio-thumbnail.jpg",
     "name": "Portfolio",
-    "technologies": "['Angular', 'Material Design Lite']",
+    "technologies": "['Angular', 'Material Design Lite', 'SendGrid API']",
     "description": "This is meta, but I'm talking about this portfolio, right here. It was built with Angular, using John Papa's style guide.",
     "github": "https://github.com/ekopelevich/portfolio_v2",
     "demoURL": "http://elanalynn.com",
