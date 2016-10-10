@@ -1,6 +1,6 @@
 [
   {
-    "thumbnail": "../assets/projects/collabowrite_thumbnail.png",
+    "thumbnail": "../assets/projects/collabowrite-thumbnail.png",
     "name": "CollaboWrite",
     "technologies": "['Ember', 'Express', 'Node', 'Google OAuth', 'PostgreSQL', 'JSON API']",
     "description": "CollaboWrite is collaborative story telling platform that allows users to write and illustrate collaborative stories.",
