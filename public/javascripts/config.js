@@ -52,13 +52,13 @@ function config($stateProvider, $urlRouterProvider) {
     controllerAs: 'vm',
   })
   .state('contact', {
-    url: '/projects/contact',
+    url: '/contact',
     templateUrl: 'partials/contact.html',
     controller: 'ContactController',
     controllerAs: 'vm',
   })
   .state('resources', {
-    url: '/projects/resources',
+    url: '/resources',
     templateUrl: 'partials/resources.html',
     controller: 'ResourcesController',
     controllerAs: 'vm',

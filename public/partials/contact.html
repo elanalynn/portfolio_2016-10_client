@@ -15,23 +15,21 @@
           <a href="https://twitter.com/elanalynn/"><img src="assets/contact/twitter.png" alt="" /></a>
         </div>
         <p>Submit questions, comments, praise and criticism here.</p>
-        <form action="/messages" method="POST">
+        <form name="contact-form" ng-submit="vm.sendMessage(vm.message)">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" ng-model="contact.name">
+            <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" ng-model="vm.message.name">
             <label class="mdl-textfield__label" for="Name">Name</label>
             <span class="mdl-textfield__error">Letters and spaces only</span>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" ng-model="contact.email">
+            <input class="mdl-textfield__input" type="text" ng-model="vm.message.email">
             <label class="mdl-textfield__label" for="Email">Email</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <textarea class="mdl-textfield__input" type="text" rows="5" ng-model="contact.note"></textarea>
+            <textarea class="mdl-textfield__input" type="text" rows="5" ng-model="vm.message.note"></textarea>
             <label class="mdl-textfield__label" for="note">Note</label>
           </div>
-          <p>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">Send</button>
-          </p>
+          <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >Send</button>
         </form>
       </div>
     </div>

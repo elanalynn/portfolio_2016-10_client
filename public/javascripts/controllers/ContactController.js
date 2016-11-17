@@ -1,8 +1,13 @@
-function ContactController(submitMessage) {
+ContactController.$inject = ['messageService']
+
+function ContactController(messageService) {
   var vm = this
-  vm.message = {
-    name: '',
-    email: '',
-    note: '',
+  vm.message = {}
+  vm.sendMessage = (message) => {
+    console.log('sendMessage', message)
+    messageService.sendMessage(message)
+    .then(confirmation => {
+      console.log(confirmation)
+    })
   }
 }

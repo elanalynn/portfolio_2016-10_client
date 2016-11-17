@@ -1,8 +1,9 @@
 angular
   .module('portfolioApp', ['ui.router', 'ngAnimate'])
   .config(config)
-  .controller('MainController', ['$state', MainController])
+  .controller('ApplicationController', ApplicationController)
   .controller('AboutController', AboutController)
   .controller('ProjectsController', ProjectsController)
-  .controller('ContactsController', ContactController)
+  .controller('ContactController', ContactController)
+  .factory('messageService', messageService)
   .factory('projectsService', projectsService)
