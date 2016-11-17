@@ -6,7 +6,8 @@ function ContactController(messageService) {
   vm.sendMessage = (message) => {
     messageService.sendMessage(message)
     .then(confirmation => {
-      vm.confirmation = confirmation
+      vm.confirmation = confirmation.data
+      vm.message = {}
     })
   }
 }
