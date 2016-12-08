@@ -10,7 +10,7 @@
   },{
     "thumbnail": "../assets/projects/stumblr-thumbnail.jpg",
     "name": "Stumblr",
-    "technologies": "['React', 'Express', 'Twitter OAuth', 'MongoDB', 'Bootstrap']",
+    "technologies": "React, Express, Twitter OAuth, MongoDB, Bootstrap",
     "description": "Stumblr is pub crawl planning app that maps a barhopping route based on your current location or a specific address.",
     "github": "https://github.com/designatedDrinkers/stumblr",
     "demoURL": "#",
