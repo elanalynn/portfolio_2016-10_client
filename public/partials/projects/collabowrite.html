@@ -7,25 +7,26 @@
   <section class="mdl-card__supporting-text mdl-grid">
     <section class="mdl-cell--1-offset mdl-cell--7-col">
       <p class="strong">Built October 2016</p>
-      <p class="italic">{{vm.projectList[2].technologies}}</p>
+      <div class="italic" ng-repeat="technology in vm.projectList[2].technologies">
+        <span>{{technology}}, </span>
+      </div>
     </section>
-    <section class="mdl-cell--1-offset mdl-cell--3-col">
+    <section class="mdl-cell--4-col">
       <a href="{{vm.projectList[0].demoURL}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent elk-project-button" target="_blank">Live</a>
-      <a href="{{vm.projectList[0].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Github</a>
+      <a href="{{vm.projectList[0].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Repo</a>
     </section>
     <section class="mdl-grid">
-      <section class="mdl-cell--1-offset mdl-cell--7-col">
-        <p>CollaboWrite is a storytelling platform. </p>
-
+      <section class="mdl-cell--10-col">
+        <h4>CollaboWrite is a storytelling platform. </h4>
+        <img src="assets/projects/collabowrite-thumbnail.png" alt="Collabowrite thumbnail" />
         <p>Features include:</p>
-
         <ul>
-          <li>Twitter OAuth</li>
+          <li>Login with Twitter</li>
+          <li>Create stories and edit details at any time</li>
+          <li>Contribute to any story by writing new chapters</li>
+          <li>Search for stories by genre</li>
         </ul>
 
-      </section>
-      <section class="mdl-cell--1-offset mdl-cell--2-col">
-        <img src="assets/projects/collabowrite-thumbnail.png" alt="Collabowrite thumbnail" />
       </section>
     </section>
   </section>
