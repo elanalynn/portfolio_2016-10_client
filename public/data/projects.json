@@ -2,7 +2,7 @@
   {
     "thumbnail": "../assets/projects/collabowrite-thumbnail.png",
     "name": "CollaboWrite",
-    "technologies": "['Ember', 'Express', 'Node', 'Google OAuth', 'PostgreSQL', 'JSON API']",
+    "technologies": "Angular, Express, Node, Twitter OAuth, PostgreSQL",
     "description": "CollaboWrite is collaborative story telling platform that allows users to write and illustrate collaborative stories.",
     "github": "https://github.com/elanalynn/collabowrite",
     "demoURL": "https://collabowrite.elanalynn.com",

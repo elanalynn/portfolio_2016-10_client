@@ -204,3 +204,23 @@ footer {
 .elk-project-button {
   margin-right: 15px;
 }
+
+.project-detail-title {
+  margin-top: 60px;
+}
+
+.project-detail-date {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.project-detail-technology {
+  font-weight: bold;
+  font-style: italic;
+  color: #6c5b02
+}
+
+.project-detail-image {
+  max-width: 300px;
+  height: auto;
+}

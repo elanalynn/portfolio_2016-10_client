@@ -1,32 +1,44 @@
 <article class="mdl-card demo-card-wide__custom">
   <section class="mdl-cell--1-offset mdl-cell--10-col">
     <div class="mdl-card__title">
-      <h2>CollaboWrite</h2>
+      <h2 class=project-detail-title>CollaboWrite</h2>
     </div>
   </section>
+  <span ng-load="vm.getTechnologies(0)"></span>
   <section class="mdl-card__supporting-text mdl-grid">
     <section class="mdl-cell--1-offset mdl-cell--7-col">
-      <p class="strong">Built October 2016</p>
-      <div class="italic" ng-repeat="technology in vm.projectList[2].technologies">
-        <span>{{technology}}, </span>
-      </div>
+      <p class="project-detail-date">October 2016</p>
+      <p>Built with: <span class="project-detail-technology" ng-repeat="technology in vm.technologies">{{technology}}, </span></p>
     </section>
     <section class="mdl-cell--4-col">
       <a href="{{vm.projectList[0].demoURL}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent elk-project-button" target="_blank">Live</a>
       <a href="{{vm.projectList[0].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Repo</a>
     </section>
     <section class="mdl-grid">
-      <section class="mdl-cell--10-col">
-        <h4>CollaboWrite is a storytelling platform. </h4>
-        <img src="assets/projects/collabowrite-thumbnail.png" alt="Collabowrite thumbnail" />
-        <p>Features include:</p>
-        <ul>
-          <li>Login with Twitter</li>
-          <li>Create stories and edit details at any time</li>
-          <li>Contribute to any story by writing new chapters</li>
-          <li>Search for stories by genre</li>
-        </ul>
-
+      <section class="mdl-cell--1-offset mdl-cell--10-col">
+        <h4>{{vm.projectList[0].name}} is a storytelling platform. </h4>
+        <p>
+          As a user, you can create an account by signing up with Twitter. You can browse stories, add chapters to any other user stories and create your own stories. You can choose a genre or leave it open and update story details at any point. As a user, you also have a dashboard where you can track the stories you own, the stories you've contributed to and the stories you've marked as favorites.
+        </p>
+        <p>
+          Upcoming features include the ability to approve or reject contributions, track a story's progress across the world with an interactive map and drawing comic book style panels for chapter contributions.
+        </p>
+        <section class="mdl-grid">
+          <section class="mdl-cell--8-col">
+            <p>Features include:</p>
+            <ul>
+              <li>Login with Twitter</li>
+              <li>Create stories and edit details at any time</li>
+              <li>Contribute to any story by writing new chapters</li>
+              <li>Search for stories by genre</li>
+              <li>Save favorites</li>
+              <li>Keep track of all activity via Dashboard</li>
+            </ul>
+          </section>
+          <section class="mdl-cell--4-col">
+            <img class="project-detail-image" src="assets/projects/collabowrite-thumbnail.png" alt="{{vm.projectList[0].name}}" />
+          </section>
+        </section>
       </section>
     </section>
   </section>
