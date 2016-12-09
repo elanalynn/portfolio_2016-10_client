@@ -4,7 +4,6 @@
       <h2 class=project-detail-title>{{ vm.projectList[0].name }}</h2>
     </div>
   </section>
-  <span ng-load="vm.getTechnologies(0)"></span>
   <section class="mdl-card__supporting-text mdl-grid">
     <section class="mdl-cell--1-offset mdl-cell--7-col">
       <p class="project-detail-date">{{ vm.projectList[0].date }}</p>
@@ -23,7 +22,7 @@
           <section class="mdl-cell--8-col">
             <p>Features include:</p>
             <ul ng-repeat="feature in vm.features" class="project-detail-features">
-              <li>{{feature}}</li>
+              <li>{{ feature }}</li>
             <ul>
           </section>
           <section class="mdl-cell--4-col">

@@ -1,32 +1,35 @@
 <article class="mdl-card demo-card-wide__custom">
   <section class="mdl-cell--1-offset mdl-cell--10-col">
     <div class="mdl-card__title">
-      <h2>CollaboWrite</h2>
+      <h2 class=project-detail-title>{{ vm.projectList[3].name }}</h2>
     </div>
   </section>
+  <span></span>
   <section class="mdl-card__supporting-text mdl-grid">
     <section class="mdl-cell--1-offset mdl-cell--7-col">
-      <p class="strong">Built October 2016</p>
-      <p class="italic">{{vm.projectList[2].technologies}}</p>
+      <p class="project-detail-date">{{ vm.projectList[3].date }}</p>
+      <p>Built with: <span class="project-detail-technology" ng-repeat="technology in vm.technologies">{{technology}}, </span></p>
     </section>
-    <section class="mdl-cell--1-offset mdl-cell--3-col">
-      <a href="{{vm.projectList[0].demoURL}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent elk-project-button" target="_blank">Live</a>
-      <a href="{{vm.projectList[0].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Github</a>
+    <section class="mdl-cell--4-col">
+      <a href="{{vm.projectList[3].demoURL}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent elk-project-button" target="_blank">Live</a>
+      <a href="{{vm.projectList[3].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Repo</a>
     </section>
     <section class="mdl-grid">
-      <section class="mdl-cell--1-offset mdl-cell--7-col">
-        <p>I came across a graphical visualization of a life in weeks via<a href="http://waitbutwhy.com/2014/05/life-weeks.html" target="_blank"> waitbutwhy.com</a>. Weeks were represented by simple squares, arranged in rows of 52 to represent a year. I fell in love with the diagram so I immediately printed the page and started marking it up. It wasn’t long before I hit the inevitable limitation of interactivity that comes with a sheet of paper. I thought, wouldn’t this be cool if it was a web application? This is my attempt at making “Your Life in Weeks” interactive.</p>
-        <p>I created this for a front-end assignment in the fifth week of bootcamp. I used Bootstrap, jQuery and localStorage to persist the life events to the best of my ability at the time. I am currently working on rewriting this project as a full stack application.</p>
-
-        <p>Features include:</p>
-
-        <ul>
-          <li>...</li>
-        </ul>
-
-      </section>
-      <section class="mdl-cell--1-offset mdl-cell--2-col">
-        <img src="assets/projects/weeks-thumbnail.png" alt="Your LIfe in Weeks thumbnail" />
+      <section class="mdl-cell--1-offset mdl-cell--10-col">
+        <h4 class="project-detail-blurb">{{ vm.projectList[3].blurb }}</h4>
+        <p>{{ vm.projectList[3].descriptionLong1 }}</p>
+        <p>{{ vm.projectList[3].descriptionLong2 }}</p>
+        <section class="mdl-grid">
+          <section class="mdl-cell--8-col">
+            <p>Features include:</p>
+            <ul ng-repeat="feature in vm.features" class="project-detail-features">
+              <li>{{ feature }}</li>
+            <ul>
+          </section>
+          <section class="mdl-cell--4-col">
+            <img ng-src="{{ vm.projectList[3].thumbnail }}" alt="{{ vm.projectList[3].name }}" />
+          </section>
+        </section>
       </section>
     </section>
   </section>
