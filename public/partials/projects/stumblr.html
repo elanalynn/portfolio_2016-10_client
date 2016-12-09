@@ -7,7 +7,7 @@
   <span ng-load="vm.getTechnologies(0)"></span>
   <section class="mdl-card__supporting-text mdl-grid">
     <section class="mdl-cell--1-offset mdl-cell--7-col">
-      <p class="project-detail-date">February 2016</p>
+      <p class="project-detail-date">{{vm.projectList[1].date}}</p>
       <p>Built with: <span class="project-detail-technology" ng-repeat="technology in vm.technologies">{{technology}}, </span></p>
     </section>
     <section class="mdl-cell--4-col">
@@ -16,27 +16,15 @@
     </section>
     <section class="mdl-grid">
       <section class="mdl-cell--1-offset mdl-cell--10-col">
-        <h4>{{vm.projectList[1].name}} maps your best barcrawl </h4>
-        <p>
-          Stumblr is pub crawl planner that maps a barhopping route based on your current location or a specific address. The app asks you to select the level of barcrawl you would like to do - from '5k' (3 bars) to 'Marathon' (10 bars!). When you head to the first bar and order a drink, you can check in. If you complete the route, you earn a badge. As you accumulate badges, you can earn even more badges. Frequency and distance matters too! You can also earn badges for cutting your bar crawl short... but I don't know if you want to show those off to your friends.
-        </p>
-        <p>
-          This was a collaboration with two other students. It was our first exposure to React, MongoDB and OpenShift.
-        </p>
+        <h4 class="project-detail-blurb">{{vm.projectList[1].blurb}}</h4>
+        <p>{{vm.projectList[1].descriptionLong1}}</p>
+        <p>{{vm.projectList[1].descriptionLong2}}</p>
         <section class="mdl-grid">
           <section class="mdl-cell--8-col">
             <p>Features include:</p>
+            <ul ng-repeat="feature in vm.features" class="project-detail-features">
+              <li>{{feature}}</li>
             <ul>
-              <li>Login with Twitter Auth</li>
-              <li>Customize tweet settings and dashboard settings</li>
-              <li>Create a route based on location and route preferences</li>
-              <li>Save routes and see their statuses</li>
-              <li>View your route on a Google Map</li>
-              <li>Check in, skip and focus on bars on the map</li>
-              <li>Earn badges based on the type and number of routes you complete</li>
-              <li>Tweet when you check in and earn badges</li>
-              <li>Connect to Uber when you end a route.</li>
-            </ul>
           </section>
           <section class="mdl-cell--4-col">
             <iframe width="420" height="315" src="https://www.youtube.com/embed/2FxQtDDtg1M" frameborder="0" allowfullscreen></iframe>

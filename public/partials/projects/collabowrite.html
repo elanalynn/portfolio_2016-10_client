@@ -7,7 +7,7 @@
   <span ng-load="vm.getTechnologies(0)"></span>
   <section class="mdl-card__supporting-text mdl-grid">
     <section class="mdl-cell--1-offset mdl-cell--7-col">
-      <p class="project-detail-date">October 2016</p>
+      <p class="project-detail-date">{{vm.projectList[0].date}}</p>
       <p>Built with: <span class="project-detail-technology" ng-repeat="technology in vm.technologies">{{technology}}, </span></p>
     </section>
     <section class="mdl-cell--4-col">
@@ -16,24 +16,15 @@
     </section>
     <section class="mdl-grid">
       <section class="mdl-cell--1-offset mdl-cell--10-col">
-        <h4>{{vm.projectList[0].name}} is a storytelling platform. </h4>
-        <p>
-          As a user, you can create an account by signing up with Twitter. You can browse stories, add chapters to any other user stories and create your own stories. You can choose a genre or leave it open and update story details at any point. As a user, you also have a dashboard where you can track the stories you own, the stories you've contributed to and the stories you've marked as favorites.
-        </p>
-        <p>
-          Upcoming features include the ability to approve or reject contributions, track a story's progress across the world with an interactive map and drawing comic book style panels for chapter contributions.
-        </p>
+        <h4 class="project-detail-blurb">{{vm.projectList[0].blurb}}</h4>
+        <p>{{vm.projectList[0].descriptionLong1}}</p>
+        <p>{{vm.projectList[0].descriptionLong2}}</p>
         <section class="mdl-grid">
           <section class="mdl-cell--8-col">
             <p>Features include:</p>
+            <ul ng-repeat="feature in vm.features" class="project-detail-features">
+              <li>{{feature}}</li>
             <ul>
-              <li>Login with Twitter</li>
-              <li>Create stories and edit details at any time</li>
-              <li>Contribute to any story by writing new chapters</li>
-              <li>Search for stories by genre</li>
-              <li>Save favorites</li>
-              <li>Keep track of all activity via Dashboard</li>
-            </ul>
           </section>
           <section class="mdl-cell--4-col">
             <img class="project-detail-image" src="assets/projects/collabowrite-thumbnail.png" alt="{{vm.projectList[0].name}}" />

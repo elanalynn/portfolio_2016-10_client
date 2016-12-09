@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'GazePro';
+  src: url('../assets.fonts/gaze_pro-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets.fonts/gaze_pro-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets.fonts/gaze_pro-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets.fonts/gaze_pro-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets.fonts/gaze_pro-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 body {
   display: flex;
   background-color: #e5c217;
@@ -206,7 +215,13 @@ footer {
 }
 
 .project-detail-title {
-  margin-top: 60px;
+  font-family: 'GazePro', 'Lato', sans-serif;
+  margin: 60px 0 0 20px;
+}
+
+.project-detail-blurb {
+  font-weight: bold;
+  color: #6c5b02;
 }
 
 .project-detail-date {
@@ -217,7 +232,7 @@ footer {
 .project-detail-technology {
   font-weight: bold;
   font-style: italic;
-  color: #6c5b02
+  color: #6c5b02;
 }
 
 .project-detail-image {
@@ -229,4 +244,8 @@ footer {
   margin-top: 30px;
   max-width: 250px;
   height: auto;
+}
+
+.project-detail-features {
+  line-height: 1em;
 }

@@ -3,6 +3,7 @@ function ProjectsController(projectsService, $state){
 
   projectsService.readData()
   .then(projects => {
+
     vm.projectList = projects.data
 
     switch ($state.current.name) {
@@ -17,16 +18,21 @@ function ProjectsController(projectsService, $state){
       case 'weeks': vm.projectIndex = 3
         break
       default: vm.projectIndex = 0
-
     }
 
     vm.getTech = projectIndex => {
       vm.technologies = vm.projectList[projectIndex].technologies.split(', ')
     }
 
+    vm.getFeatures = projectIndex => {
+      vm.features = vm.projectList[projectIndex].features.split(', ')
+    }
+
     vm.getTech(vm.projectIndex)
+    vm.getFeatures(vm.projectIndex)
 
     return vm.projectsList
+
   })
 
 }
