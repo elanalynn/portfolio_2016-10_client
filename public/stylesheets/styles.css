@@ -36,6 +36,15 @@ form {
           justify-content: center;
 }
 
+.main-header {
+  font-family: 'GazePro', 'Lato', sans-serif;
+  color: #e5c217;
+}
+
+.main-header span {
+  color: #FFF;
+}
+
 .portfolio-logo-row {
   display: absolute;
   min-height: 200px;
