@@ -101,19 +101,25 @@ form {
   display: flex;
 }
 
-.portfolio-card h2{
-  margin-top: 50px;
+.portfolio-card h2 {
+  margin: 60px 0 10px 0;
+}
+
+.project-title {
+  margin-top: -40px;
+}
+
+.project-description {
+  max-height: 110px;
 }
 
 .mdl-card__supporting-text {
   height: 100%;
-  min-height: 50px;
 }
 
 .mdl-card__actions {
   height: 50px;
   background-color: #707070;
-  align-self: flex-end;
 }
 
 .mdl-button {

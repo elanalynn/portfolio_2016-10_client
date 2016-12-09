@@ -21,7 +21,7 @@ function ProjectsController(projectsService, $state){
     }
 
     vm.getTech = projectIndex => {
-      vm.technologies = vm.projectList[projectIndex].technologies.split(', ')
+      vm.technologies = vm.projectList[projectIndex].technologies.split(' ')
     }
 
     vm.getFeatures = projectIndex => {
