@@ -1,0 +1,49 @@
+.portfolio-logo-drop {
+  position: absolute;
+  animation: drop 500ms 500ms ease-in;
+  animation-fill-mode: both;
+}
+
+.portfolio-logo-roll {
+  position: absolute;
+  animation: roll 3000ms 800ms cubic-bezier(.55,.73,.34,1.01);
+  animation-fill-mode: both;
+}
+
+@keyframes drop {
+  0% {
+    left: 0;
+    top: -100px;
+  }
+  25% {
+    left: 0;
+    top: 95px;
+  }
+  50% {
+    left: 0;
+    top: 50px;
+  }
+  75% {
+    left: 0;
+    top: 95px;
+  }
+  85% {
+    left: 0;
+    top: 80px;
+  }
+  100% {
+    left: 0;
+    top: 100px;
+  }
+}
+
+@keyframes roll {
+  0% {
+    left: 0;
+    transform: rotateZ(0deg);
+}
+  100% {
+    left: 600px;
+    transform: rotateZ(405deg);
+  }
+}
