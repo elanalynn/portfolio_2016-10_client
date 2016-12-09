@@ -1,13 +1,13 @@
 <div class="mdl-grid portfolio-max-width">
   <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" ng-repeat="project in vm.projectList">
     <div class="mdl-card__media">
-      <a ui-sref="{{project.details}}">
+      <a ui-sref="{{ project.details }}">
         <img class="article-image" ng-src="{{ project.thumbnail }}" alt="{{ project.thumbnail }}">
       </a>
     </div>
     <div class="mdl-card__title project-title">
       <h2 class="mdl-card__title-text">
-        <a ui-sref="{{project.details}}" class="projects-all-title">
+        <a ui-sref="{{ project.details }}" class="projects-all-title">
           {{ project.name }}
         </a>
       </h2>
@@ -16,7 +16,7 @@
       <p>{{ project.description }}</p>
     </div>
     <div class="mdl-card__actions mdl-card--border">
-      <a ui-sref="{{project.details}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">Learn more...</a>
+      <a ui-sref="{{ project.details }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">Learn more...</a>
     </div>
   </div>
 </div>
