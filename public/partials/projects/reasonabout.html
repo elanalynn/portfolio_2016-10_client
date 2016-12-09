@@ -1,35 +1,36 @@
-<div class="mdl-card demo-card-wide__custom">
+<article class="mdl-card demo-card-wide__custom">
   <section class="mdl-cell--1-offset mdl-cell--10-col">
     <div class="mdl-card__title">
-      <h2>Reason About</h2>
+      <h2 class=project-detail-title>{{ vm.projectList[4].name }}</h2>
     </div>
   </section>
-  <div class="mdl-card__supporting-text">
-    <div class="mdl-grid">
-      <section class="mdl-cell--1-offset mdl-cell--7-col">
-        <p class="strong">Built January 2016</p>
-        <p class="italic">{{vm.projectList[2].technologies}}</p>
+  <span></span>
+  <section class="mdl-card__supporting-text mdl-grid">
+    <section class="mdl-cell--1-offset mdl-cell--7-col">
+      <p class="project-detail-date">{{ vm.projectList[4].date }}</p>
+      <p>Built with: <span class="project-detail-technology" ng-repeat="technology in vm.technologies">{{technology}}, </span></p>
+    </section>
+    <section class="mdl-cell--4-col">
+      <a href="{{vm.projectList[4].demoURL}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent elk-project-button" target="_blank">Live</a>
+      <a href="{{vm.projectList[4].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Repo</a>
+    </section>
+    <section class="mdl-grid">
+      <section class="mdl-cell--1-offset mdl-cell--10-col">
+        <h4 class="project-detail-blurb">{{ vm.projectList[4].blurb }}</h4>
+        <p>{{ vm.projectList[4].descriptionLong1 }}</p>
+        <p>{{ vm.projectList[4].descriptionLong2 }}</p>
+        <section class="mdl-grid">
+          <section class="mdl-cell--8-col">
+            <p>Features include:</p>
+            <ul ng-repeat="feature in vm.features" class="project-detail-features">
+              <li>{{ feature }}</li>
+            <ul>
+          </section>
+          <section class="mdl-cell--4-col">
+            <img ng-src="{{ vm.projectList[4].thumbnail }}" alt="{{ vm.projectList[4].name }}" />
+          </section>
+        </section>
       </section>
-      <section class="mdl-cell--1-offset mdl-cell--3-col">
-        <a href="{{vm.projectList[2].demoURL}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent elk-project-button" target="_blank">Live</a>
-        <a href="{{vm.projectList[2].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Github</a>
-      </section>
-    </div>
-    <div class="mdl-grid">
-      <section class="mdl-cell--1-offset mdl-cell--7-col">
-        <p>Coming from a marketing background, I know that a person is not <span class="italic">always</span> inspired to write original content. I also know that to keep an online space interesting enough to return to again and again, you need a constant flow of original content. One evening, it occured to me that I had 26 peers who were learning to reason about really interesting things every single day. Why shouldn't we combine forces and create a bunch of interesting content in one easy to find place.</p>
-        <p>I learned Jekyll and quickly put together a site that my peers could collaborate on. I include this here with my projects, not to wow anyone with my coding (Jekyll is ridiculously easy to use), but to show my initiative to organize and communicate.</p>
-
-        <p>Features include:</p>
-
-        <ul>
-          <li>...</li>
-        </ul>
-
-      </section>
-      <section class="mdl-cell--1-offset mdl-cell--2-col">
-        <img src="assets/projects/reasonAbout-screenshot.jpg" alt="ReasonAbout screenshot" />
-      </section>
-    </div>
-  </div>
-</div>
+    </section>
+  </section>
+</article>
