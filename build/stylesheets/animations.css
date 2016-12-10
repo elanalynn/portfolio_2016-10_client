@@ -25,7 +25,7 @@
   }
   75% {
     left: 0;
-    top: 95px;
+    top: 120px;
   }
   85% {
     left: 0;
@@ -33,7 +33,7 @@
   }
   100% {
     left: 0;
-    top: 100px;
+    top: 120px;
   }
 }
 
@@ -44,6 +44,10 @@
 }
   100% {
     left: 600px;
-    transform: rotateZ(405deg);
+    transform: rotateZ(220deg);
+  }
+  100% {
+    left: 1000px;
+    transform: rotateZ(400deg);
   }
 }

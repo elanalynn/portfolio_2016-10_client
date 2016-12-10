@@ -39,30 +39,59 @@ form {
 .main-header {
   font-family: 'GazePro', 'Lato', sans-serif;
   color: #e5c217;
+  font-size: 1em;
+  visibility: hidden;
+}
+
+.portfolio-logo-row {
+  display: absolute;
+  min-height: 50px;
+}
+
+.portfolio-logo {
+  height: 80px;
+  width: 80px;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 380px) {
+  .main-header {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .main-header {
+    visibility: visible;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .main-header {
+    visibility: visible;
+    font-size: 3em;
+  }
+
+  .portfolio-logo-row {
+    min-height: 200px;
+  }
+
+  .portfolio-logo {
+    visibility: visible;
+  }
 }
 
 .main-header span {
   color: #FFF;
 }
 
-.portfolio-logo-row {
-  display: absolute;
-  min-height: 200px;
-}
 
-.is-compact .portfolio-logo-row {
-  min-height: auto;
-  display: hidden;
-}
-
-.portfolio-logo {
-  height: 100px;
-  width: 100px;
-}
 
 .is-compact .portfolio-logo {
   height: 30px;
   width: 30px;
+  visibility: hidden;
 }
 
 .portfolio-navigation-row {
