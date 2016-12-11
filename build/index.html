@@ -7,79 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Elana Kopelevich - Web Developer and Designer</title>
   <link rel="icon" href="assets/main/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-amber.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="/stylesheets/styles.css" />
-  <link rel="stylesheet" href="/stylesheets/animations.css" />
+  <link rel="stylesheet" href="/stylesheets/main.css" />
 </head>
-
 <body ng-controller="ApplicationController as vm">
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-      <div class="mdl-layout__header-row portfolio-logo-row">
-        <h1 class="main-header">Elana Kopelevich - <span>Web Developer</span></h1>
-        <!-- <div class="portfolio-logo-drop">
-          <div class="portfolio-logo-roll">
-            <img class="portfolio-logo" src="assets/main/logo.png" alt="Elana Kopelevich logo" />
-          </div>
-        </div> -->
-      </div>
-      <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-        <nav class="mdl-navigation">
-          <a ui-sref-active="active" class="mdl-navigation__link" ui-sref="about">About</a>
-          <a ui-sref-active="active" class="mdl-navigation__link" ui-sref="projects">Projects</a>
-          <a class="mdl-navigation__link" href="http://reasonabout.co" target="_blank">Blog</a>
-          <a class="mdl-navigation__link" href="http://elana.kopelevich.org" target="_blank">Art</a>
-          <a ui-sref-active="active" class="mdl-navigation__link" ui-sref="contact">Contact</a>
-          <a ui-sref-active="active" class="mdl-navigation__link" ui-sref="resources">Resources</a>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-      <nav class="mdl-navigation">
-        <a ui-sref-active="active" class="mdl-navigation__link" ui-sref="about">About</a>
-        <a ui-sref-active="active" class="mdl-navigation__link" ui-sref="projects">Projects</a>
-        <a class="mdl-navigation__link" href="http://reasonabout.co" target="_blank">Blog</a>
-        <a class="mdl-navigation__link" href="http://elana.kopelevich.org" target="_blank">Art</a>
-        <a ui-sref-active="active" class="mdl-navigation__link" ui-sref="contact">Contact</a>
-        <a ui-sref-active="active" class="mdl-navigation__link" ui-sref="resources">Resources</a>
-      </nav>
-    </div>
-    <main class="mdl-layout__content" ui-view></main>
-    <footer class="mdl-mini-footer">
-      <div class="mdl-mini-footer__left-section">
-        <p>Elana Lynn Kopelevich</p>
-      </div>
-      <div class="mdl-mini-footer__right-section">
-        <p><a class="mdl-navigation__link" ui-sref="contact">Contact</a></p>
-      </div>
-    </footer>
-  </div>
-  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <section ui-view="header"></section>
+  <section ui-view="main"></section>
+  <section ui-view="footer"></section>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
-  <script type="text/javascript" src="/javascripts/config.js"></script>
-  <script type="text/javascript" src="/javascripts/controllers/ApplicationController.js"></script>
-  <script type="text/javascript" src="/javascripts/controllers/AboutController.js"></script>
-  <script type="text/javascript" src="/javascripts/controllers/ProjectsController.js"></script>
-  <script type="text/javascript" src="/javascripts/controllers/ContactController.js"></script>
-  <script type="text/javascript" src="/javascripts/controllers/ResourcesController.js"></script>
-  <script type="text/javascript" src="/javascripts/services/messageService.js"></script>
-  <script type="text/javascript" src="/javascripts/services/projectsService.js"></script>
-  <script type="text/javascript" src="/javascripts/app.js"></script>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-85344228-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
+  <script type="text/javascript" src="./javascripts/main-min.js"></script>
+  <script type="text/javascript" src="./javascripts/analytics.js"></script>
 </body>
 </html>
+
+<!-- <script type="text/javascript" src="./src/javascripts/config.js"></script>
+<script type="text/javascript" src="./src/javascripts/controllers/ApplicationController.js"></script>
+<script type="text/javascript" src="./src/javascripts/controllers/AboutController.js"></script>
+<script type="text/javascript" src="./src/javascripts/controllers/ProjectsController.js"></script>
+<script type="text/javascript" src="./src/javascripts/controllers/ContactController.js"></script>
+<script type="text/javascript" src="./src/javascripts/controllers/ResourcesController.js"></script>
+<script type="text/javascript" src="./src/javascripts/services/messageService.js"></script>
+<script type="text/javascript" src="./src/javascripts/services/projectsService.js"></script>
+<script type="text/javascript" src="./src/javascripts/app.js"></script> -->

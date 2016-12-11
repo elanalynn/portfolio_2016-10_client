@@ -1,15 +1,24 @@
+/*------------------------------------*\
+  #IMPORTS
+\*------------------------------------*/
+
+@import '_variables';
+@import '_animations';
+@import '_header';
+@import '_footer';
+
 @font-face {
   font-family: 'GazePro';
-  src: url('../assets.fonts/gaze_pro-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../assets.fonts/gaze_pro-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets.fonts/gaze_pro-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets.fonts/gaze_pro-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../assets.fonts/gaze_pro-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('../assets/fonts/gaze_pro-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/gaze_pro-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/gaze_pro-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/gaze_pro-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/gaze_pro-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 body {
   display: flex;
-  background-color: #e5c217;
+  background-color: $bright-yellow;
   font-family: 'Lato', sans-serif;
   background-image: url(../assets/main/body-bg.png);
 }
@@ -23,117 +32,6 @@ form {
   margin-bottom: 30px;
 }
 
-.portfolio-header {
-  background-image: url(../assets/main/header-bg.png);
-  background-size: cover;
-  color: #fff;
-}
-
-.portfolio-header .mdl-layout__header-row {
-  padding: 0;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main-header {
-  font-family: 'GazePro', 'Lato', sans-serif;
-  color: #e5c217;
-  font-size: 1em;
-  visibility: hidden;
-}
-
-.portfolio-logo-row {
-  display: absolute;
-  min-height: 50px;
-}
-
-.portfolio-logo {
-  height: 80px;
-  width: 80px;
-  visibility: hidden;
-}
-
-@media screen and (min-width: 380px) {
-  .main-header {
-    visibility: visible;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .main-header {
-    visibility: visible;
-    font-size: 2em;
-  }
-}
-
-@media screen and (min-width: 760px) {
-  .main-header {
-    visibility: visible;
-    font-size: 3em;
-  }
-
-  .portfolio-logo-row {
-    min-height: 200px;
-  }
-
-  .portfolio-logo {
-    visibility: visible;
-  }
-}
-
-.main-header span {
-  color: #FFF;
-}
-
-
-
-.is-compact .portfolio-logo {
-  height: 30px;
-  width: 30px;
-  visibility: hidden;
-}
-
-.portfolio-navigation-row {
-  background-color: rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  height: 45px;
-}
-
-.portfolio-navigation-row .mdl-navigation {
-  text-align: center;
-  max-width: 900px;
-  width: 100%;
-}
-
-.portfolio-navigation-row .mdl-navigation__link {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  line-height: 42px;
-}
-
-.portfolio-header .mdl-layout__drawer-button {
-  background-color: rgba(197, 197, 197, 0.8);
-}
-
-.portfolio-navigation-row .active {
-  position: relative;
-  color: #ffd600;
-}
-
-.portfolio-navigation-row .active:after {
-  content: "";
-  width: 70%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #ffd600;
-  left: 15%;
-  margin-bottom: 3px;
-}
 
 .portfolio-card {
   display: flex;

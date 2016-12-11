@@ -1,3 +1,5 @@
+messageService.$inject = ['$http']
+
 function projectsService($http){
   let service = {}
   service.readData = function(){

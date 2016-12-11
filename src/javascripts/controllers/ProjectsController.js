@@ -1,3 +1,5 @@
+ProjectsController.$inject = ['projectsService', '$state']
+
 function ProjectsController(projectsService, $state){
   var vm = this
 

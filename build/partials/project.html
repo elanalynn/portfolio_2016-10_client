@@ -1,0 +1,35 @@
+<article class="mdl-card demo-card-wide__custom">
+  <section class="mdl-cell--1-offset mdl-cell--10-col">
+    <div class="mdl-card__title">
+      <h2 class=project-detail-title>{{ vm.projectList[0].name }}</h2>
+    </div>
+  </section>
+  <section class="mdl-card__supporting-text mdl-grid">
+    <section class="mdl-cell--1-offset mdl-cell--7-col">
+      <p class="project-detail-date">{{ vm.projectList[0].date }}</p>
+      <p>Built with: <span class="project-detail-technology" ng-repeat="technology in vm.technologies">{{ technology }} </span></p>
+    </section>
+    <section class="mdl-cell--4-col">
+      <a href="{{vm.projectList[0].demoURL}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent elk-project-button" target="_blank">Live</a>
+      <a href="{{vm.projectList[0].github}}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"target="_blank">Repo</a>
+    </section>
+    <section class="mdl-grid">
+      <section class="mdl-cell--1-offset mdl-cell--10-col">
+        <h4 class="project-detail-blurb">{{ vm.projectList[0].blurb }}</h4>
+        <p>{{ vm.projectList[0].descriptionLong1 }}</p>
+        <p>{{ vm.projectList[0].descriptionLong2 }}</p>
+        <section class="mdl-grid">
+          <section class="mdl-cell--8-col">
+            <p>Features include:</p>
+            <ul ng-repeat="feature in vm.features" class="project-detail-features">
+              <li>{{ feature }}</li>
+            <ul>
+          </section>
+          <section class="mdl-cell--4-col">
+            <img class="project-detail-image" src="assets/projects/collabowrite-thumbnail.png" alt="{{ vm.projectList[0].name }}" />
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</article>
