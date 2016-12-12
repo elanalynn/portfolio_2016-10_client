@@ -48,7 +48,7 @@ header {
       width: 80%; }
       .nav-row--large .nav--large .nav-link, .nav-row--large .nav--large a {
         line-height: 42px;
-        color: #FFF;
+        color: #fff;
         text-decoration: none; }
     .nav-row--large .active {
       position: relative;
@@ -71,7 +71,7 @@ footer {
   background-image: url(../assets/main/footer-background.png);
   background-size: cover;
   height: 20px;
-  color: #FFF;
+  color: #fff;
   padding: 10px 40px; }
 
 button {
@@ -84,7 +84,7 @@ button {
   margin: 40px auto;
   width: 800px;
   height: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 2px 2px 8px #40403e; }
   .about_card .about_card-media img {
     width: 100%; }
@@ -106,31 +106,29 @@ button {
     width: 250px;
     height: 400;
     margin: 5px;
-    background-color: #FFF;
+    background-color: #adada5;
     box-shadow: 2px 2px 3px #40403e; }
   .projects-container .project_card-media img {
     width: 100%;
     height: 100%; }
-  .projects-container .project_card-title {
-    font-family: "GazePro", "Lato", sans-serif;
-    color: #40403e;
-    margin: 0 5px; }
-  .projects-container .project_card-text {
-    margin: 0 10px 20px 10px;
-    color: #686a6b; }
   .projects-container .project_card-action {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding-bottom: 10px;
     background-color: #40403e; }
-    .projects-container .project_card-action .project_card-action--links {
+    .projects-container .project_card-action .project_card-title {
+      font-family: "GazePro", "Lato", sans-serif;
+      color: #fff; }
+    .projects-container .project_card-action .project_card-action_links {
       display: flex;
       justify-content: space-around; }
-      .projects-container .project_card-action .project_card-action--links a {
-        color: #FFF;
+      .projects-container .project_card-action .project_card-action_links a {
+        color: #fff;
         margin: 0 5px;
         cursor: pointer; }
-      .projects-container .project_card-action .project_card-action--links a:hover {
+      .projects-container .project_card-action .project_card-action_links a:hover {
         color: #e5c217; }
   .projects-container .project_card:hover {
     box-shadow: 4px 4px 8px #40403e; }
@@ -142,7 +140,7 @@ button {
   margin: 40px auto;
   width: 800px;
   height: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 2px 2px 8px #40403e; }
   .contact_card .contact_card-media img {
     width: 100%; }
