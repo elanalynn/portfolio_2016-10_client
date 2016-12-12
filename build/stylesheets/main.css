@@ -1,5 +1,121 @@
 /*------------------------------------*  #IMPORTS
 \*------------------------------------*/
+body, main, div, article, section, h1, h2, h3, h4, h5, h6, p, button, form, a, ul, ol, li {
+  margin: 0;
+  padding: 0; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../assets/main/header-bg.png);
+  background-size: cover;
+  font-family: "GazePro", "Lato", sans-serif;
+  color: #e5c217; }
+  header h1 {
+    align-self: center;
+    margin: 0; }
+    header h1 span {
+      color: #FFF; }
+
+.nav--drawer {
+  display: flex; }
+
+.nav--small {
+  display: flex; }
+
+.nav--large {
+  display: none; }
+
+@media screen and (min-device-width: 480px) {
+  .nav--drawer {
+    display: none; }
+  .nav--small {
+    display: none; }
+  .nav-row--large {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    height: 45px;
+    width: 100%; }
+    .nav-row--large .nav--large {
+      display: flex;
+      justify-content: space-around;
+      font-family: "Lato", sans-serif;
+      text-align: center;
+      width: 80%; }
+      .nav-row--large .nav--large .nav-link, .nav-row--large .nav--large a {
+        line-height: 42px;
+        color: #FFF;
+        text-decoration: none; }
+    .nav-row--large .active {
+      position: relative;
+      color: #e5c217; }
+    .nav-row--large .active:after {
+      content: "";
+      width: 70%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #e5c217;
+      left: 15%;
+      margin-bottom: 3px; } }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../assets/main/footer-background.png);
+  background-size: cover;
+  height: 20px;
+  color: #FFF;
+  padding: 10px 40px; }
+
+button {
+  padding: 2px; }
+
+.projects-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap; }
+  .projects-container .project_card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400;
+    margin: 5px;
+    background-color: #FFF;
+    box-shadow: 2px 2px 3px #40403e; }
+  .projects-container .project_card-media img {
+    width: 100%;
+    height: 100%; }
+  .projects-container .project_card-title {
+    font-family: "GazePro", "Lato", sans-serif;
+    color: #40403e;
+    margin: 0 5px; }
+  .projects-container .project_card-text {
+    margin: 0 10px 20px 10px;
+    color: #686a6b; }
+  .projects-container .project_card-action {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #40403e; }
+    .projects-container .project_card-action .project_card-action--links {
+      display: flex;
+      justify-content: space-around; }
+      .projects-container .project_card-action .project_card-action--links a {
+        color: #FFF;
+        margin: 0 5px;
+        cursor: pointer; }
+      .projects-container .project_card-action .project_card-action--links a:hover {
+        color: #e5c217; }
+  .projects-container .project_card:hover {
+    box-shadow: 4px 4px 5px #40403e; }
+
 .portfolio-logo-drop {
   position: absolute;
   animation: drop 500ms 500ms ease-in;
@@ -38,77 +154,6 @@
     left: 600px;
     transform: rotateZ(405deg); } }
 
-.portfolio-header {
-  background-image: url(../assets/main/header-bg.png);
-  background-size: cover;
-  color: #fff; }
-
-.portfolio-header .mdl-layout__header-row {
-  padding: 0;
-  justify-content: center; }
-
-.main-header {
-  font-family: "GazePro", "Lato", sans-serif;
-  color: #e5c217; }
-
-.main-header span {
-  color: #FFF; }
-
-.portfolio-logo-row {
-  display: absolute;
-  min-height: 200px; }
-
-.is-compact .portfolio-logo-row {
-  min-height: auto;
-  display: hidden; }
-
-.portfolio-logo {
-  height: 100px;
-  width: 100px; }
-
-.is-compact .portfolio-logo {
-  height: 30px;
-  width: 30px; }
-
-.portfolio-navigation-row {
-  background-color: rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  height: 45px; }
-
-.portfolio-navigation-row .mdl-navigation {
-  text-align: center;
-  max-width: 900px;
-  width: 100%; }
-
-.portfolio-navigation-row .nav-link {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  line-height: 42px; }
-
-.portfolio-header .mdl-layout__drawer-button {
-  background-color: rgba(197, 197, 197, 0.8); }
-
-.portfolio-navigation-row .active {
-  position: relative;
-  color: #e5c217; }
-
-.portfolio-navigation-row .active:after {
-  content: "";
-  width: 70%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #e5c217;
-  left: 15%;
-  margin-bottom: 3px; }
-
-.footer {
-  display: flex;
-  justify-content: space-between; }
-
 @font-face {
   font-family: 'GazePro';
   src: url("../assets/fonts/gaze_pro-webfont.eot");
@@ -116,36 +161,25 @@
   src: url("../assets/fonts/gaze_pro-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/gaze_pro-webfont.woff2") format("woff2"), url("../assets/fonts/gaze_pro-webfont.woff") format("woff"), url("../assets/fonts/gaze_pro-webfont.ttf") format("truetype"); }
 
 body {
-  display: flex;
   background-color: #e5c217;
   font-family: 'Lato', sans-serif;
-  background-image: url(../assets/main/body-bg.png); }
+  background-image: url(../assets/main/body-bg.png);
+  margin: 0;
+  padding: 0; }
 
-main {
+.wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  height: 95vh;
+  flex-direction: column; }
+
+.main {
   align-self: center;
-  min-height: 100%; }
+  display: flex; }
 
 form {
   margin-bottom: 30px; }
-
-.portfolio-card {
-  display: flex; }
-
-.portfolio-card h2 {
-  margin: 60px 0 10px 0; }
-
-.project-title {
-  margin-top: -40px; }
-
-.project-description {
-  max-height: 110px; }
-
-.mdl-card__supporting-text {
-  height: 100%; }
-
-.mdl-card__actions {
-  height: 50px;
-  background-color: #707070; }
 
 .mdl-button {
   font-family: 'Lato', sans-serif; }
@@ -209,13 +243,6 @@ img.article-image {
 
 .portfolio-contact .mdl-textfield {
   width: 100%; }
-
-footer {
-  background-image: url(../assets/main/footer-background.png);
-  background-size: cover;
-  display: flex;
-  align-items: stretch;
-  margin-bottom: -10px; }
 
 .demo-card-wide__custom {
   width: 100%;

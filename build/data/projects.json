@@ -10,8 +10,8 @@
     "descriptionLong2": "Upcoming features include the ability to approve or reject contributions, track a story's progress across the world with an interactive map and drawing comic book style panels for chapter contributions.",
     "features": "Login with Twitter, Create stories and edit details at any time, Contribute to any story by writing new chapters, Search for stories by genre, Save favorites, Keep track of all activity via Dashboard",
     "github": "https://github.com/elanalynn/collabowrite",
-    "demoURL": "https://collabowrite.elanalynn.com",
-    "details": "collabowrite"
+    "url": "https://collabowrite.elanalynn.com",
+    "detail": "root.collabowrite"
   },{
     "thumbnail": "../assets/projects/stumblr-thumbnail.jpg",
     "name": "Stumblr",
@@ -23,8 +23,8 @@
     "descriptionLong2": "This was a collaboration with two other students. It was our first exposure to React, MongoDB and OpenShift.",
     "features": "Login with Twitter, Customize tweet settings and dashboard settings, Create a route based on location and route preferences, Save routes and see their statuses, View your route on a Google Map, Check in, skip and focus on bars on the map, Earn badges based on the type and number of routes you complete, Tweet when you check in and earn badges, Connect to Uber when you end a route.",
     "github": "https://github.com/designatedDrinkers/stumblr",
-    "demoURL": "http://stumblr-club.herokuapp.com/",
-    "details": "stumblr"
+    "url": "http://stumblr-club.herokuapp.com/",
+    "detail": "root.stumblr"
   },{
     "thumbnail": "../assets/projects/planit-thumbnail.jpg",
     "name": "Planit",
@@ -36,8 +36,8 @@
     "descriptionLong2": "While I collaborated on many of the pieces, the majority of my focus was on the views and client-side javascript.",
     "features": "Log in with LinkedIn, Customize your profile, Create and own events, Add tasks, Review (and accept or reject) proposals, Propose work for event owners' tasks based the qualifications listed in your profile.",
     "github": "https://github.com/elanalynn/Planit",
-    "demoURL": "http://planit.space",
-    "details": "planit"
+    "url": "http://planit.space",
+    "detail": "root.planit"
   },{
     "thumbnail": "../assets/projects/weeks-thumbnail.jpg",
     "name": "Your Life in Weeks",
@@ -48,31 +48,7 @@
     "descriptionLong2": "I created this for a front-end assignment in the fifth week of bootcamp. I used Bootstrap, jQuery and localStorage to persist the life events to the best of my ability at the time. I am currently working on rewriting this project as a full stack application.",
     "features": "Save events on a grid, Color code events by type, Pinpoint events on a map, Click through events to pull up details",
     "github": "https://github.com/ekopelevich/your_life_in_weeks",
-    "demoURL": "/weeks/demo",
-    "details": "weeks"
-  },{
-    "thumbnail": "../assets/projects/reasonabout-thumbnail.jpg",
-    "name": "Reason About",
-    "technologies": "Jekyll",
-    "description": "I created this blog as a channel for my peers to collaborate on blogging about the technology we were learning.",
-    "blurb": "Reason About is a student blog collaboration.",
-    "descriptionLong1": "A blog for students (now working developers) to share technical knowledge as we acquire it. Teaching is the best way to learn.",
-    "descriptionLong2": "",
-    "features": "Contribute via GitHub",
-    "github": "https://github.com/ekopelevich/reasonAbout",
-    "demoURL": "http://reasonabout.co",
-    "details": "reasonabout"
-  },{
-    "thumbnail": "../assets/projects/portfolio-thumbnail.jpg",
-    "name": "Portfolio",
-    "technologies": "Angular 1.x, Material Design Lite, SendGrid API",
-    "description": "This is a placeholder for something more interesting - coming soon.",
-    "blurb": "This is a portfolio...",
-    "descriptionLong1": "This is definitely a placeholder...",
-    "descriptionLong2": "",
-    "features": "Valuable content!",
-    "github": "https://github.com/ekopelevich/portfolio_v2",
-    "demoURL": "http://elanalynn.com",
-    "details": "portfolio"
+    "url": "/weeks/demo",
+    "detail": "root.weeks"
   }
 ]

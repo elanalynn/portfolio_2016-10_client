@@ -1,22 +1,22 @@
-<div class="mdl-grid portfolio-max-width">
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" ng-repeat="project in vm.projectList">
-    <div class="mdl-card__media">
-      <a ui-sref="{{ project.details }}">
-        <img class="article-image" ng-src="{{ project.thumbnail }}" alt="{{ project.thumbnail }}">
-      </a>
-    </div>
-    <div class="mdl-card__title project-title">
-      <h2 class="mdl-card__title-text">
-        <a ui-sref="{{ project.details }}" class="projects-all-title">
-          {{ project.name }}
-        </a>
-      </h2>
-    </div>
-    <div class="mdl-card__supporting-text project-description">
-      <p>{{ project.description }}</p>
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a ui-sref="{{ project.details }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">Learn more...</a>
-    </div>
+<div class="projects-container">
+  <div class="project_card" ng-repeat="project in vm.projectList">
+    <a ui-sref="{{ project.details }}">
+      <div class="project_card-media">
+        <img ng-src="{{ project.thumbnail }}" alt="{{ project.thumbnail }}">
+      </div>
+      <div class="project_card-title">
+        <h2 class="project_card-title">{{ project.name }}</h2>
+      </div>
+      <div class="project_card-text">
+        <p>{{ project.description }}</p>
+      </div>
+      <div class="project_card-action">
+        <section class="project_card-action--links">
+          <a ui-sref="{{ project.detail }}" ><i class="material-icons">info_outline</i></a>
+          <a ui-sref="{{ project.link }}" ><i class="material-icons">launch</i></a>
+          <a ui-sref="{{ project.github }}" ><i class="material-icons">code</i></a>
+        </section>
+      </div>
+    </a>
   </div>
 </div>

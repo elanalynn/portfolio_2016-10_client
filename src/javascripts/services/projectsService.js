@@ -1,4 +1,4 @@
-messageService.$inject = ['$http']
+projectsService.$inject = ['$http']
 
 function projectsService($http){
   let service = {}

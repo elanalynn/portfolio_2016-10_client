@@ -1,6 +1,11 @@
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
+  background-image: url(../assets/main/footer-background.png);
+  background-size: cover;
+  height: 20px;
+  color: $white;
+  padding: 10px 40px;
 
   .footer--left {
 
