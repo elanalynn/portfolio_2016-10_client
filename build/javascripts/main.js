@@ -101,28 +101,6 @@ function config($stateProvider, $urlRouterProvider) {
 }
 'use strict';
 
-messageService.$inject = ['$http', '$location'];
-
-function messageService($http, $location) {
-  var service = {};
-  service.sendMessage = function (message) {
-    return $http.post('https://portfolio-service.herokuapp.com/messages', message);
-  };
-  return service;
-}
-'use strict';
-
-projectsService.$inject = ['$http'];
-
-function projectsService($http) {
-  var service = {};
-  service.readData = function () {
-    return $http.get('../../data/projects.json');
-  };
-  return service;
-}
-'use strict';
-
 AboutController.$inject = [];
 
 function AboutController() {
@@ -212,4 +190,26 @@ ResourcesController.$inject = ['projectsService'];
 function ResourcesController(projectsService) {
   var vm = this;
   vm.thing = 'put some resources in here!';
+}
+'use strict';
+
+messageService.$inject = ['$http', '$location'];
+
+function messageService($http, $location) {
+  var service = {};
+  service.sendMessage = function (message) {
+    return $http.post('https://portfolio-service.herokuapp.com/messages', message);
+  };
+  return service;
+}
+'use strict';
+
+projectsService.$inject = ['$http'];
+
+function projectsService($http) {
+  var service = {};
+  service.readData = function () {
+    return $http.get('../../data/projects.json');
+  };
+  return service;
 }

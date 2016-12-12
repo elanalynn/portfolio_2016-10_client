@@ -1,0 +1,50 @@
+.contact_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  width: 800px;
+  height: 100%;
+  background-color: $secondary-color;
+  box-shadow: 2px 2px 8px $tertiary-color;
+
+  .contact_card-media {
+    img {
+      width: 100%;
+    }
+  }
+
+  .contact_card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+    .contact_card-social--links {
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+    }
+
+    form {
+      margin: 40px auto;
+      width: 400px;
+      max-width: 80%;
+
+      .floating_label-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        input, textarea {
+          border: 0;
+          border-bottom: 1px solid $tertiary-color;
+        }
+
+        .form-error {
+          display: none;
+        }
+      }
+    }
+  }
+}

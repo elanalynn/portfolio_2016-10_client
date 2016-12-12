@@ -1,0 +1,28 @@
+.about_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  width: 800px;
+  height: 100%;
+  background-color: $secondary-color;
+  box-shadow: 2px 2px 8px $tertiary-color;
+
+  .about_card-media {
+    img {
+      width: 100%;
+    }
+  }
+
+  .about_card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+    h3, p {
+      margin: 10px;
+    }
+
+  }
+}

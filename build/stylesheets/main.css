@@ -77,6 +77,25 @@ footer {
 button {
   padding: 2px; }
 
+.about_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  width: 800px;
+  height: 100%;
+  background-color: #FFF;
+  box-shadow: 2px 2px 8px #40403e; }
+  .about_card .about_card-media img {
+    width: 100%; }
+  .about_card .about_card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; }
+    .about_card .about_card-content h3, .about_card .about_card-content p {
+      margin: 10px; }
+
 .projects-container {
   margin-top: 40px;
   display: flex;
@@ -114,7 +133,41 @@ button {
       .projects-container .project_card-action .project_card-action--links a:hover {
         color: #e5c217; }
   .projects-container .project_card:hover {
-    box-shadow: 4px 4px 5px #40403e; }
+    box-shadow: 4px 4px 8px #40403e; }
+
+.contact_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  width: 800px;
+  height: 100%;
+  background-color: #FFF;
+  box-shadow: 2px 2px 8px #40403e; }
+  .contact_card .contact_card-media img {
+    width: 100%; }
+  .contact_card .contact_card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; }
+    .contact_card .contact_card-content .contact_card-social--links {
+      display: flex;
+      justify-content: space-around;
+      width: 200px; }
+    .contact_card .contact_card-content form {
+      margin: 40px auto;
+      width: 400px;
+      max-width: 80%; }
+      .contact_card .contact_card-content form .floating_label-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column; }
+        .contact_card .contact_card-content form .floating_label-container input, .contact_card .contact_card-content form .floating_label-container textarea {
+          border: 0;
+          border-bottom: 1px solid #40403e; }
+        .contact_card .contact_card-content form .floating_label-container .form-error {
+          display: none; }
 
 .portfolio-logo-drop {
   position: absolute;
@@ -170,8 +223,8 @@ body {
 .wrapper {
   display: flex;
   width: 100%;
-  min-height: 100%;
-  height: 95vh;
+  min-height: 95vh;
+  height: 100%;
   flex-direction: column; }
 
 .main {
