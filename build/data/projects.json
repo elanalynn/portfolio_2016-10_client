@@ -11,20 +11,20 @@
     "features": "Login with Twitter, Create stories and edit details at any time, Contribute to any story by writing new chapters, Search for stories by genre, Save favorites, Keep track of all activity via Dashboard",
     "github": "https://github.com/elanalynn/collabowrite",
     "url": "https://collabowrite.elanalynn.com",
-    "detail": "root.collabowrite"
+    "detail": "collabowrite"
   },{
     "thumbnail": "../assets/projects/stumblr-thumbnail.jpg",
     "name": "Stumblr",
     "date": "February 2016",
     "technologies": "React, Express, Twitter OAuth, MongoDB, Bootstrap",
-    "description": "Stumblr is pub crawl planning app that maps a barhopping route based on your current location or a specific address.",
+    "description": "Stumblr is pub crawl planning app that maps a route based on your location (or an address) and your preferences.",
     "blurb": "Stumblr maps your best barcrawl.",
     "descriptionLong1": "Stumblr is pub crawl planner that maps a barhopping route based on your current location or a specific address. The app asks you to select the level of barcrawl you would like to do - from '5k' (3 bars) to 'Marathon' (10 bars!). When you head to the first bar and order a drink, you can check in. If you complete the route, you earn a badge. As you accumulate badges, you can earn even more badges. Frequency and distance matters too! You can also earn badges for cutting your bar crawl short... but I don't know if you want to show those off to your friends.",
     "descriptionLong2": "This was a collaboration with two other students. It was our first exposure to React, MongoDB and OpenShift.",
     "features": "Login with Twitter, Customize tweet settings and dashboard settings, Create a route based on location and route preferences, Save routes and see their statuses, View your route on a Google Map, Check in, skip and focus on bars on the map, Earn badges based on the type and number of routes you complete, Tweet when you check in and earn badges, Connect to Uber when you end a route.",
     "github": "https://github.com/designatedDrinkers/stumblr",
     "url": "http://stumblr-club.herokuapp.com/",
-    "detail": "root.stumblr"
+    "detail": "stumblr"
   },{
     "thumbnail": "../assets/projects/planit-thumbnail.jpg",
     "name": "Planit",
@@ -37,7 +37,7 @@
     "features": "Log in with LinkedIn, Customize your profile, Create and own events, Add tasks, Review (and accept or reject) proposals, Propose work for event owners' tasks based the qualifications listed in your profile.",
     "github": "https://github.com/elanalynn/Planit",
     "url": "http://planit.space",
-    "detail": "root.planit"
+    "detail": "planit"
   },{
     "thumbnail": "../assets/projects/weeks-thumbnail.jpg",
     "name": "Your Life in Weeks",
@@ -49,6 +49,6 @@
     "features": "Save events on a grid, Color code events by type, Pinpoint events on a map, Click through events to pull up details",
     "github": "https://github.com/ekopelevich/your_life_in_weeks",
     "url": "/weeks/demo",
-    "detail": "root.weeks"
+    "detail": "weeks"
   }
 ]

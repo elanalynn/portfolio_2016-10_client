@@ -8,18 +8,18 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
   $urlRouterProvider.otherwise('/projects')
   $stateProvider
   .state('root', {
-      views: {
-        '': {
-          abstract: true,
-          templateUrl: '/partials/layout.html',
-        },
-        'header@root': {
-          templateUrl: '/partials/header.html',
-        },
-        'footer@root': {
-          templateUrl: '/partials/footer.html',
-        },
+    views: {
+      '': {
+        abstract: true,
+        templateUrl: '/partials/layout.html',
       },
+      'header@root': {
+        templateUrl: '/partials/header.html',
+      },
+      'footer@root': {
+        templateUrl: '/partials/footer.html',
+      },
+    },
    })
   .state('root.about', {
     url: '/about',
@@ -61,7 +61,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
-  .state('root.projects.collabowrite', {
+  .state('root.collabowrite', {
     url: '/projects/collabowrite',
     views: {
       'main': {
@@ -71,7 +71,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
-  .state('root.projects.stumblr', {
+  .state('root.stumblr', {
     url: '/projects/stumblr',
     views: {
       'main': {
@@ -81,7 +81,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
-  .state('root.projects.planit', {
+  .state('root.planit', {
     url: '/projects/planit',
     views: {
       'main': {
@@ -91,7 +91,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
-  .state('root.projects.weeks', {
+  .state('root.weeks', {
     url: '/projects/weeks',
     views: {
       'main': {

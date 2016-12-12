@@ -61,7 +61,7 @@ function config($stateProvider, $urlRouterProvider) {
         controllerAs: 'vm'
       }
     }
-  }).state('root.projects.collabowrite', {
+  }).state('root.collabowrite', {
     url: '/projects/collabowrite',
     views: {
       'main': {
@@ -70,7 +70,7 @@ function config($stateProvider, $urlRouterProvider) {
         controllerAs: 'vm'
       }
     }
-  }).state('root.projects.stumblr', {
+  }).state('root.stumblr', {
     url: '/projects/stumblr',
     views: {
       'main': {
@@ -79,7 +79,7 @@ function config($stateProvider, $urlRouterProvider) {
         controllerAs: 'vm'
       }
     }
-  }).state('root.projects.planit', {
+  }).state('root.planit', {
     url: '/projects/planit',
     views: {
       'main': {
@@ -88,7 +88,7 @@ function config($stateProvider, $urlRouterProvider) {
         controllerAs: 'vm'
       }
     }
-  }).state('root.projects.weeks', {
+  }).state('root.weeks', {
     url: '/projects/weeks',
     views: {
       'main': {
