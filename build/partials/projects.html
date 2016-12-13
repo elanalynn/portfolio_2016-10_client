@@ -1,16 +1,11 @@
 <div class="projects-container">
   <div class="project_card" ng-repeat="project in vm.projectList">
-    <a ui-sref="{{ project.details }}">
+    <a ui-sref="{{ project.detail }}">
       <div class="project_card-media">
         <img ng-src="{{ project.thumbnail }}" alt="{{ project.thumbnail }}">
       </div>
-      <div class="project_card-action">
+      <div class="project_card-title_container">
         <h2 class="project_card-title">{{ project.name }}</h2>
-        <section class="project_card-action_links">
-          <a ui-sref="{{ project.detail }}"><i class="material-icons">info_outline</i></a>
-          <a ui-sref="{{ project.link }}"><i class="material-icons">launch</i></a>
-          <a href="{{ project.github }}"><i class="material-icons">code</i></a>
-        </section>
       </div>
     </a>
   </div>

@@ -11,7 +11,7 @@
     "features": "Login with Twitter, Create stories and edit details at any time, Contribute to any story by writing new chapters, Search for stories by genre, Save favorites, Keep track of all activity via Dashboard",
     "github": "https://github.com/elanalynn/collabowrite",
     "url": "https://collabowrite.elanalynn.com",
-    "detail": "collabowrite"
+    "detail": "root.collabowrite"
   },{
     "thumbnail": "../assets/projects/stumblr-thumbnail.jpg",
     "name": "Stumblr",
@@ -24,7 +24,7 @@
     "features": "Login with Twitter, Customize tweet settings and dashboard settings, Create a route based on location and route preferences, Save routes and see their statuses, View your route on a Google Map, Check in, skip and focus on bars on the map, Earn badges based on the type and number of routes you complete, Tweet when you check in and earn badges, Connect to Uber when you end a route.",
     "github": "https://github.com/designatedDrinkers/stumblr",
     "url": "http://stumblr-club.herokuapp.com/",
-    "detail": "stumblr"
+    "detail": "root.stumblr"
   },{
     "thumbnail": "../assets/projects/planit-thumbnail.jpg",
     "name": "Planit",
@@ -37,7 +37,7 @@
     "features": "Log in with LinkedIn, Customize your profile, Create and own events, Add tasks, Review (and accept or reject) proposals, Propose work for event owners' tasks based the qualifications listed in your profile.",
     "github": "https://github.com/elanalynn/Planit",
     "url": "http://planit.space",
-    "detail": "planit"
+    "detail": "root.planit"
   },{
     "thumbnail": "../assets/projects/weeks-thumbnail.jpg",
     "name": "Your Life in Weeks",
@@ -49,6 +49,6 @@
     "features": "Save events on a grid, Color code events by type, Pinpoint events on a map, Click through events to pull up details",
     "github": "https://github.com/ekopelevich/your_life_in_weeks",
     "url": "/weeks/demo",
-    "detail": "weeks"
+    "detail": "root.weeks"
   }
 ]
