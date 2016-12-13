@@ -6,7 +6,7 @@
     "technologies": "Angular 1.x, Express, Node, Twitter OAuth, PostgreSQL",
     "description": "CollaboWrite is collaborative story telling platform that allows users to write and illustrate collaborative stories.",
     "blurb": "CollaboWrite is a storytelling platform.",
-    "descriptionLong1": "As a user, you can create an account by signing up with Twitter. You can browse stories, add chapters to any other user stories and create your own stories. You can choose a genre or leave it open and update story details at any point. As a user, you also have a dashboard where you can track the stories you own, the stories you've contributed to and the stories you've marked as favorites.",
+    "descriptionLong1": "As a user, you can create an account by signing up with Twitter. You can browse stories, add chapters to any other user stories and create your own stories. You can choose a genre or leave it open and update story details at any point. You also have a dashboard where you can track the stories you own, the stories you've contributed to and the stories you've marked as favorites.",
     "descriptionLong2": "Upcoming features include the ability to approve or reject contributions, track a story's progress across the world with an interactive map and drawing comic book style panels for chapter contributions.",
     "features": "Login with Twitter, Create stories and edit details at any time, Contribute to any story by writing new chapters, Search for stories by genre, Save favorites, Keep track of all activity via Dashboard",
     "github": "https://github.com/elanalynn/collabowrite",

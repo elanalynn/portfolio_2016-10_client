@@ -65,7 +65,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
     url: '/projects/collabowrite',
     views: {
       'main': {
-        templateUrl: 'partials/projects/collabowrite.html',
+        templateUrl: 'partials/project.html',
         controller: 'ProjectsController',
         controllerAs: 'vm',
       },
@@ -75,7 +75,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
     url: '/projects/stumblr',
     views: {
       'main': {
-        templateUrl: 'partials/projects/stumblr.html',
+        templateUrl: 'partials/project.html',
         controller: 'ProjectsController',
         controllerAs: 'vm',
       },
@@ -85,7 +85,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
     url: '/projects/planit',
     views: {
       'main': {
-        templateUrl: 'partials/projects/planit.html',
+        templateUrl: 'partials/project.html',
         controller: 'ProjectsController',
         controllerAs: 'vm',
       },
@@ -95,7 +95,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
     url: '/projects/weeks',
     views: {
       'main': {
-        templateUrl: 'partials/projects/weeks.html',
+        templateUrl: 'partials/project.html',
         controller: 'ProjectsController',
         controllerAs: 'vm',
       },

@@ -65,7 +65,7 @@ function config($stateProvider, $urlRouterProvider) {
     url: '/projects/collabowrite',
     views: {
       'main': {
-        templateUrl: 'partials/projects/collabowrite.html',
+        templateUrl: 'partials/project.html',
         controller: 'ProjectsController',
         controllerAs: 'vm'
       }
@@ -74,7 +74,7 @@ function config($stateProvider, $urlRouterProvider) {
     url: '/projects/stumblr',
     views: {
       'main': {
-        templateUrl: 'partials/projects/stumblr.html',
+        templateUrl: 'partials/project.html',
         controller: 'ProjectsController',
         controllerAs: 'vm'
       }
@@ -83,7 +83,7 @@ function config($stateProvider, $urlRouterProvider) {
     url: '/projects/planit',
     views: {
       'main': {
-        templateUrl: 'partials/projects/planit.html',
+        templateUrl: 'partials/project.html',
         controller: 'ProjectsController',
         controllerAs: 'vm'
       }
@@ -92,7 +92,7 @@ function config($stateProvider, $urlRouterProvider) {
     url: '/projects/weeks',
     views: {
       'main': {
-        templateUrl: 'partials/projects/weeks.html',
+        templateUrl: 'partials/project.html',
         controller: 'ProjectsController',
         controllerAs: 'vm'
       }
@@ -145,8 +145,7 @@ ProjectsController.$inject = ['projectsService', '$state'];
 function ProjectsController(projectsService, $state) {
   var vm = this;
 
-  projectsService.readData().then(function (projects) {
-
+  projectsService.getProjects().then(function (projects) {
     vm.projectList = projects.data;
 
     switch ($state.current.name) {
@@ -208,7 +207,7 @@ projectsService.$inject = ['$http'];
 
 function projectsService($http) {
   var service = {};
-  service.readData = function () {
+  service.getProjects = function () {
     return $http.get('../../data/projects.json');
   };
   return service;

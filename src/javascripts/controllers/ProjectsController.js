@@ -3,9 +3,7 @@ ProjectsController.$inject = ['projectsService', '$state']
 function ProjectsController(projectsService, $state){
   var vm = this
 
-  projectsService.readData()
-  .then(projects => {
-
+  projectsService.getProjects().then(projects => {
     vm.projectList = projects.data
 
     switch ($state.current.name) {
@@ -34,7 +32,5 @@ function ProjectsController(projectsService, $state){
     vm.getFeatures(vm.projectIndex)
 
     return vm.projectsList
-
   })
-
 }

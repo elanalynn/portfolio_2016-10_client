@@ -1,0 +1,64 @@
+.project_detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  width: 800px;
+  height: 100%;
+  background-color: $white;
+  box-shadow: 2px 2px 8px $secondary-dark;
+  padding: 40px;
+
+    .project_detail-title {
+      font-family: $primary-font;
+    }
+
+    .project_detail-data {
+      display: flex;
+      justify-content: space-between;
+
+    .project_detail-data--left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project_detail-data--right {
+      display: flex;
+      justify-content: flex-end;
+
+      a {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .project_detail-text {
+
+    .project_detail-blurb, .project_detail-description {
+      margin: 20px auto;
+    }
+  }
+
+  .project_detail-bottom_container {
+    display: flex;
+    justify-content: space-between;
+
+    .project_detail-features_container ul {
+      margin: 10px;
+
+      li {
+        margin: 10px 20px;
+      }
+    }
+
+    .project_detail-media_container {
+      width: 200px;
+      height: 200px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

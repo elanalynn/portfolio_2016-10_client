@@ -77,8 +77,21 @@ footer {
   color: #fff;
   padding: 10px 40px; }
 
-button {
-  padding: 2px; }
+.button {
+  padding: 10px 15px;
+  color: #fff; }
+
+.button-primary {
+  background-color: #BE9400; }
+
+.button-primary:hover {
+  background-color: #e5c217; }
+
+.button-secondary {
+  background-color: #40403e; }
+
+.button-secondary:hover {
+  background-color: #adada5; }
 
 .about_card {
   display: flex;
@@ -126,9 +139,49 @@ button {
     text-decoration: none; }
     .projects-container .project_card-title_container .project_card-title {
       font-family: "GazePro", "Lato", sans-serif;
-      color: #fff; }
+      color: #fff;
+      letter-spacing: 2px; }
   .projects-container .project_card:hover {
     box-shadow: 4px 4px 8px #40403e; }
+
+.project_detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  width: 800px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px #40403e;
+  padding: 40px; }
+  .project_detail-container .project_detail-title {
+    font-family: "GazePro", "Lato", sans-serif; }
+  .project_detail-container .project_detail-data {
+    display: flex;
+    justify-content: space-between; }
+    .project_detail-container .project_detail-data .project_detail-data--left {
+      display: flex;
+      flex-direction: column; }
+    .project_detail-container .project_detail-data .project_detail-data--right {
+      display: flex;
+      justify-content: flex-end; }
+      .project_detail-container .project_detail-data .project_detail-data--right a {
+        margin: 0 5px; }
+  .project_detail-container .project_detail-text .project_detail-blurb, .project_detail-container .project_detail-text .project_detail-description {
+    margin: 20px auto; }
+  .project_detail-container .project_detail-bottom_container {
+    display: flex;
+    justify-content: space-between; }
+    .project_detail-container .project_detail-bottom_container .project_detail-features_container ul {
+      margin: 10px; }
+      .project_detail-container .project_detail-bottom_container .project_detail-features_container ul li {
+        margin: 10px 20px; }
+    .project_detail-container .project_detail-bottom_container .project_detail-media_container {
+      width: 200px;
+      height: 200px; }
+      .project_detail-container .project_detail-bottom_container .project_detail-media_container img {
+        width: 100%;
+        height: auto; }
 
 .contact_card {
   display: flex;
