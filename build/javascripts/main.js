@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('portfolioApp', ['ui.router', 'ngAnimate']).config(config).factory('messageService', messageService).factory('projectsService', projectsService).controller('ApplicationController', ApplicationController).controller('AboutController', AboutController).controller('ProjectsController', ProjectsController).controller('ContactController', ContactController);
+angular.module('portfolioApp', ['ui.router', 'ngAnimate']).config(config).factory('messageService', messageService).factory('projectsService', projectsService).factory('resourcesService', resourcesService).controller('ApplicationController', ApplicationController).controller('AboutController', AboutController).controller('ProjectsController', ProjectsController).controller('ContactController', ContactController).controller('ResourcesController', ResourcesController);
 'use strict';
 
 config.$inject = ['$stateProvider', '$urlRouterProvider']; //'$locationProvider'
@@ -186,11 +186,14 @@ function ProjectsController(projectsService, $state) {
 }
 'use strict';
 
-ResourcesController.$inject = ['projectsService'];
+ResourcesController.$inject = ['resourcesService'];
 
-function ResourcesController(projectsService) {
+function ResourcesController(resourcesService) {
   var vm = this;
-  vm.thing = 'put some resources in here!';
+  resourcesService.getResources().then(function (resources) {
+    console.log(resources);
+    vm.resources = resources;
+  });
 }
 'use strict';
 
@@ -211,6 +214,17 @@ function projectsService($http) {
   var service = {};
   service.getProjects = function () {
     return $http.get('../../data/projects.json');
+  };
+  return service;
+}
+'use strict';
+
+resourcesService.$inject = ['$http'];
+
+function resourcesService($http) {
+  var service = {};
+  service.getResources = function () {
+    return $http.get('../../data/resources.json');
   };
   return service;
 }

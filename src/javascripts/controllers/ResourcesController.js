@@ -1,6 +1,9 @@
-ResourcesController.$inject = ['projectsService']
+ResourcesController.$inject = ['resourcesService']
 
-function ResourcesController(projectsService){
+function ResourcesController(resourcesService){
   var vm = this
-  vm.thing = 'put some resources in here!'
+  resourcesService.getResources().then(resources => {
+    console.log(resources)
+    vm.resources = resources
+  })
 }

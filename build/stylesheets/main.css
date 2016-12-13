@@ -7,6 +7,9 @@ body, main, div, article, section, h1, h2, h3, h4, h5, h6, p, button, form, a, u
 a {
   text-decoration: none; }
 
+button {
+  border: none; }
+
 header {
   display: flex;
   flex-direction: column;
@@ -17,7 +20,8 @@ header {
   color: #e5c217; }
   header h1 {
     align-self: center;
-    margin: 0; }
+    margin: 0;
+    letter-spacing: 2px; }
     header h1 span {
       color: #FFF; }
 
@@ -216,6 +220,9 @@ footer {
           border-bottom: 1px solid #40403e; }
         .contact_card .contact_card-content form .floating_label-container .form-error {
           display: none; }
+
+.resource_card {
+  background-color: #fff; }
 
 .portfolio-logo-drop {
   position: absolute;
