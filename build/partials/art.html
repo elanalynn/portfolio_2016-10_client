@@ -1,0 +1,11 @@
+<div class="pictures_container">
+  <div class="picture_card" ng-repeat="picture in vm.pictures">
+    <a ui-sref="{{ picture.detail }}">
+      <div class="picture_card-media">
+        <img ng-src="{{ picture.thumbnail }}" alt="{{ picture.thumbnail }}">
+        <h3 class="picture_card-title">{{ picture.title }}</h3>
+        <p class="picture_card-title">{{ art.date }}</p>
+      </div>
+    </a>
+  </div>
+</div>

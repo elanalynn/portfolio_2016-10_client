@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('portfolioApp', ['ui.router', 'ngAnimate']).config(config).factory('messageService', messageService).factory('projectsService', projectsService).factory('resourcesService', resourcesService).controller('ApplicationController', ApplicationController).controller('AboutController', AboutController).controller('ProjectsController', ProjectsController).controller('ContactController', ContactController).controller('ResourcesController', ResourcesController);
+angular.module('portfolioApp', ['ui.router', 'ngAnimate']).config(config).factory('messageService', messageService).factory('projectsService', projectsService).factory('resourcesService', resourcesService).factory('artService', artService).controller('ApplicationController', ApplicationController).controller('AboutController', AboutController).controller('ProjectsController', ProjectsController).controller('ContactController', ContactController).controller('ResourcesController', ResourcesController).controller('ArtController', ArtController);
 'use strict';
 
 config.$inject = ['$stateProvider', '$urlRouterProvider']; //'$locationProvider'
@@ -31,6 +31,15 @@ function config($stateProvider, $urlRouterProvider) {
       'main': {
         templateUrl: 'partials/about.html',
         controller: 'AboutController',
+        controllerAs: 'vm'
+      }
+    }
+  }).state('root.art', {
+    url: '/art',
+    views: {
+      'main': {
+        templateUrl: 'partials/art.html',
+        controller: 'ArtController',
         controllerAs: 'vm'
       }
     }
@@ -101,6 +110,50 @@ function config($stateProvider, $urlRouterProvider) {
 }
 'use strict';
 
+artService.$inject = ['$http'];
+
+function artService($http) {
+  var service = {};
+  service.getArt = function () {
+    return $http.get('../../data/art.json');
+  };
+  return service;
+}
+'use strict';
+
+messageService.$inject = ['$http', '$location'];
+
+function messageService($http, $location) {
+  var service = {};
+  service.sendMessage = function (message) {
+    return $http.post('https://portfolio-service.herokuapp.com/messages', message);
+  };
+  return service;
+}
+'use strict';
+
+projectsService.$inject = ['$http'];
+
+function projectsService($http) {
+  var service = {};
+  service.getProjects = function () {
+    return $http.get('../../data/projects.json');
+  };
+  return service;
+}
+'use strict';
+
+resourcesService.$inject = ['$http'];
+
+function resourcesService($http) {
+  var service = {};
+  service.getResources = function () {
+    return $http.get('../../data/resources.json');
+  };
+  return service;
+}
+'use strict';
+
 AboutController.$inject = [];
 
 function AboutController() {
@@ -115,6 +168,17 @@ function ApplicationController($state) {
   var vm = this;
 
   vm.state = $state;
+}
+'use strict';
+
+ArtController.$inject = ['artService'];
+
+function ArtController(artService) {
+  var vm = this;
+  artService.getArt().then(function (art) {
+    console.log(art);
+    vm.art = art;
+  });
 }
 'use strict';
 
@@ -190,41 +254,8 @@ ResourcesController.$inject = ['resourcesService'];
 
 function ResourcesController(resourcesService) {
   var vm = this;
-  resourcesService.getResources().then(function (resources) {
+  resourcesService.getArt().then(function (resources) {
     console.log(resources);
     vm.resources = resources;
   });
-}
-'use strict';
-
-messageService.$inject = ['$http', '$location'];
-
-function messageService($http, $location) {
-  var service = {};
-  service.sendMessage = function (message) {
-    return $http.post('https://portfolio-service.herokuapp.com/messages', message);
-  };
-  return service;
-}
-'use strict';
-
-projectsService.$inject = ['$http'];
-
-function projectsService($http) {
-  var service = {};
-  service.getProjects = function () {
-    return $http.get('../../data/projects.json');
-  };
-  return service;
-}
-'use strict';
-
-resourcesService.$inject = ['$http'];
-
-function resourcesService($http) {
-  var service = {};
-  service.getResources = function () {
-    return $http.get('../../data/resources.json');
-  };
-  return service;
 }

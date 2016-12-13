@@ -31,6 +31,16 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
+  .state('root.art', {
+    url: '/art',
+    views: {
+      'main': {
+        templateUrl: 'partials/art.html',
+        controller: 'ArtController',
+        controllerAs: 'vm',
+      },
+    },
+  })
   .state('root.contact', {
     url: '/contact',
     views: {
