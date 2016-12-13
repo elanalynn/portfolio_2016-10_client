@@ -145,23 +145,25 @@ ProjectsController.$inject = ['projectsService', '$state'];
 function ProjectsController(projectsService, $state) {
   var vm = this;
 
+  console.log($state.current.name);
+
   projectsService.getProjects().then(function (projects) {
     vm.projectList = projects.data;
 
     switch ($state.current.name) {
-      case 'collabowrite':
+      case 'root.collabowrite':
         vm.projectIndex = 0;
         break;
-      case 'stumblr':
+      case 'root.stumblr':
         vm.projectIndex = 1;
         break;
-      case 'planit':
+      case 'root.planit':
         vm.projectIndex = 2;
         break;
-      case 'reasonabout':
+      case 'root.reasonabout':
         vm.projectIndex = 4;
         break;
-      case 'weeks':
+      case 'root.weeks':
         vm.projectIndex = 3;
         break;
       default:
