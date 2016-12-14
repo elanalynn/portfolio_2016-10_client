@@ -1,9 +1,11 @@
 [
   {
     "id": 1,
-    "date": "2016-12-10",
-    "title": "REST is not the same as CRUD",
-    "image": "../assets/posts/rest.jpg",
-    "body": "sdajfas"
+    "date": "2016-03-23",
+    "title": "Ember Magic",
+    "category": "Ember",
+    "tags": ["JavaScript", "Ember"],
+    "blurb": "A beginner's perspective on Ember.",
+    "link": "./posts/2016-03-23_ember-magic"
   }
 ]

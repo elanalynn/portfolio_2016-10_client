@@ -192,6 +192,32 @@ footer {
     margin: 40px auto; }
   .posts_container ul {
     margin: 0 auto 40px 40px; }
+  .posts_container a {
+    cursor: pointer;
+    font-weight: bold;
+    color: #40403e; }
+    .posts_container a .posts-date {
+      font-style: italic;
+      font-weight: normal;
+      font-size: .9em;
+      color: #BE9400; }
+
+.posts_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  width: 800px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px #40403e; }
+  .posts_container h2 {
+    align-self: center;
+    margin: 40px auto; }
+  .posts_container ul {
+    margin: 0 auto 40px 40px; }
+  .posts_container a {
+    cursor: pointer; }
 
 .contact_card {
   display: flex;
@@ -225,7 +251,8 @@ footer {
         flex-direction: column; }
         .contact_card .contact_card-content form .floating_label-container input, .contact_card .contact_card-content form .floating_label-container textarea {
           border: 0;
-          border-bottom: 1px solid #40403e; }
+          border-bottom: 1px solid #40403e;
+          line-height: 2em; }
         .contact_card .contact_card-content form .floating_label-container .form-error {
           display: none; }
       .contact_card .contact_card-content form .button_container {

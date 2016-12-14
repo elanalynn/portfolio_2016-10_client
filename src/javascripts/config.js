@@ -51,11 +51,21 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
-  .state('root.blog', {
-    url: '/blog',
+  .state('root.posts', {
+    url: '/posts',
     views: {
       'main': {
         templateUrl: 'partials/posts.html',
+        controller: 'BlogController',
+        controllerAs: 'vm',
+      },
+    },
+  })
+  .state('root.post', {
+    url: '/post/:id',
+    views: {
+      'main': {
+        templateUrl: 'partials/post.html',
         controller: 'BlogController',
         controllerAs: 'vm',
       },

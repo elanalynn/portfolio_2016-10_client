@@ -1,8 +1,10 @@
 <div class="posts_container">
   <h2>Recent Writing</h2>
   <ul>
-    <li ng-repeat="post in vm.posts">
-      <p ui-sref="posts({id:id})">{{ post.title }}<span> Posted: {{ post.date }}</span></p>
+    <li ng-repeat="post in vm.posts | orderBy: -order">
+      <a ui-sref="root.post({ id: post.id })">{{ post.title }}
+        <span class="posts-date" am-time-ago="post.date"></span>
+      </a>
     </li>
   </ul>
 </div>
