@@ -2,6 +2,6 @@ artService.$inject = ['$http']
 
 function artService($http){
   let service = {}
-  service.getArt = () => $http.get('../../data/art.json')
+  service.getPictures = () => $http.get('../../data/pictures.json')
   return service
 }

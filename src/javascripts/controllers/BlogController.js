@@ -1,6 +1,6 @@
-BlogController.$inject = []
+BlogController.$inject = ['blogService']
 
-function BlogController() {
+function BlogController(blogService) {
   var vm = this
-  vm.thing = 'blog controller'
+  blogService.getPosts().then(posts => vm.posts = posts.data)
 }

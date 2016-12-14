@@ -51,6 +51,16 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
+  .state('root.blog', {
+    url: '/blog',
+    views: {
+      'main': {
+        templateUrl: 'partials/posts.html',
+        controller: 'BlogController',
+        controllerAs: 'vm',
+      },
+    },
+  })
   .state('root.resources', {
     url: '/resources',
     views: {

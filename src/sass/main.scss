@@ -10,6 +10,7 @@
 @import '_about';
 @import '_projects';
 @import '_project';
+@import '_blog';
 @import '_contact';
 @import '_resources';
 @import '_animations';
@@ -25,7 +26,7 @@
 
 body {
   background-color: $primary-light;
-  font-family: 'Lato', sans-serif;
+  font-family: $secondary-font;
   background-image: url(../assets/main/body-bg.png);
   margin: 0;
   padding: 0;
@@ -44,139 +45,6 @@ body {
   justify-content: center;
 }
 
-form {
-  margin-bottom: 30px;
-}
-
-
-.mdl-button {
-  font-family: 'Lato', sans-serif;
-}
-
 .social-links img {
   margin: 10px 10px 10px 0;
-}
-
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
-}
-
-.resource-card-full-bg {
-  background: url(../assets/resources/example-blog03.jpg) center / cover;
-}
-
-.resource-card-event-bg {
-  background: url(../assets/resources/example-blog05.jpg) center / cover;
-}
-
-.resource-card-strip-bg {
-  background: url(../assets/resources/example-blog06.jpg) center / cover;
-}
-
-.resource-card-compact .mdl-card__title {
-  padding-bottom: 0;
-}
-
-img.article-image {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-max-width {
-  max-width: 900px;
-  margin: auto;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.no-left-padding {
-  padding-left: 0;
-}
-
-.no-bottom-padding {
-  padding-bottom: 0;
-}
-
-.padding-top {
-  padding: 10px 0 0;
-}
-
-.portfolio-share-btn {
-  position: relative;
-  float: right;
-  top: -4px;
-}
-
-.demo-card-event > .mdl-card__actions {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    box-sizing: border-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.mdl-card__contact-text {
-  align-self: center;
-  width: 60%;
-  margin-top: 20px;
-}
-
-.portfolio-contact .mdl-textfield {
-  width: 100%;
-}
-
-.demo-card-wide__custom {
-  width: 100%;
-  max-width: 1024px;
-  margin-top: 20px;
-}
-
-.elk-project-button {
-  margin-right: 15px;
-}
-
-.projects-all-title {
-  font-family: 'GazePro', 'Lato', sans-serif;
-  color: #6c5b02;
-  text-decoration: none;
-}
-
-.project-detail-title {
-  font-family: 'GazePro', 'Lato', sans-serif;
-  margin: 60px 0 0 20px;
-}
-
-.project-detail-blurb {
-  font-weight: bold;
-  color: #6c5b02;
-}
-
-.project-detail-date {
-  font-weight: bold;
-  font-style: italic;
-}
-
-.project-detail-technology {
-  font-weight: bold;
-  font-style: italic;
-  color: #6c5b02;
-}
-
-.project-detail-image {
-  max-width: 300px;
-  height: auto;
-}
-
-.project-detail-video {
-  margin-top: 30px;
-  max-width: 250px;
-  height: auto;
-}
-
-.project-detail-features {
-  line-height: 1em;
 }

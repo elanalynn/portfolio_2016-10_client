@@ -53,7 +53,7 @@ function config($stateProvider, $urlRouterProvider) {
       }
     }
   }).state('root.blog', {
-    url: '/blog',
+    url: '/contact',
     views: {
       'main': {
         templateUrl: 'partials/posts.html',
@@ -145,14 +145,15 @@ function ArtController(artService) {
     vm.pictures = pictures;
   });
 }
-'use strict';
+"use strict";
 
-BlogController.$inject = ['blogService'];
+BlogController.$inject = [];
 
-function BlogController(blogService) {
+function BlogController() {
   var vm = this;
   blogService.getPosts().then(function (posts) {
-    return vm.posts = posts.data;
+    console.log(posts);
+    vm.posts = posts;
   });
 }
 'use strict';
@@ -234,17 +235,6 @@ function artService($http) {
   var service = {};
   service.getPictures = function () {
     return $http.get('../../data/pictures.json');
-  };
-  return service;
-}
-'use strict';
-
-blogService.$inject = ['$http'];
-
-function blogService($http) {
-  var service = {};
-  service.getPosts = function () {
-    return $http.get('../../data/posts.json');
   };
   return service;
 }

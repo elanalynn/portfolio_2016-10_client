@@ -8,6 +8,7 @@
   background-color: $white;
   box-shadow: 2px 2px 8px $secondary-dark;
   padding: 40px;
+  font-family: $secondary-font;
 
     .project_detail-title {
       font-family: $primary-font;
@@ -36,6 +37,7 @@
 
     .project_detail-blurb, .project_detail-description {
       margin: 20px auto;
+      line-height: 1.5em;
     }
   }
 

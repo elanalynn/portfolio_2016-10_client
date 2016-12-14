@@ -1,0 +1,353 @@
+[
+  {
+    "id": 1,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2013",
+    "medium": "digital"
+  },{
+    "id": 2,
+    "title": "Jogger",
+    "thumbnail": "../assets/jogger_thumb.jpg",
+    "image": "../assets/jogger.jpg",
+    "year": "2007",
+    "medium": "digital"
+  },{
+    "id": 3,
+    "title": "Secretary Bird",
+    "thumbnail": "../assets/secretary-bird_thumb.jpg",
+    "image": "../assets/secretary-bird.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 4,
+    "title": "Secretary",
+    "thumbnail": "../assets/secretary_thumb.jpg",
+    "image": "../assets/secretary.jpg",
+    "year": "2012",
+    "medium": "digital"
+  },{
+    "id": 5,
+    "title": "Red Woman",
+    "thumbnail": "../assets/red-woman_thumb.jpg",
+    "image": "../assets/red-woman.jpg",
+    "year": "2012",
+    "medium": "digital"
+  },{
+    "id": 6,
+    "title": "Blue Woman",
+    "thumbnail": "../assets/blue-woman_thumb.jpg",
+    "image": "../assets/blue-woman.jpg",
+    "year": "2012",
+    "medium": "digital"
+  },{
+    "id": 7,
+    "title": "Happy Dog",
+    "thumbnail": "../assets/happy-dog_thumb.jpg",
+    "image": "../assets/happy-dog.jpg",
+    "year": "2012",
+    "medium": "digital"
+  },{
+    "id": 8,
+    "title": "Don Draper",
+    "thumbnail": "../assets/don-draper_thumb.jpg",
+    "image": "../assets/don-draper.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 9,
+    "title": "Shakti Dancer",
+    "thumbnail": "../assets/shakti-dancer_thumb.jpg",
+    "image": "../assets/shakti-dancer.jpg",
+    "year": "2014",
+    "medium": "digital"
+  },{
+    "id": 10,
+    "title": "Eyes and Nose",
+    "thumbnail": "../assets/eyes-and-nose_thumb.jpg",
+    "image": "../assets/eyes-and-nose.jpg",
+    "year": "2014",
+    "medium": "digital"
+  },{
+    "id": 11,
+    "title": "Sunny",
+    "thumbnail": "../assets/sunny_thumb.jpg",
+    "image": "../assets/sunny.jpg",
+    "year": "2015",
+    "medium": "digital paint over acrylic on canvas"
+  },{
+    "id": 12,
+    "title": "Dragon",
+    "thumbnail": "../assets/dragon_thumb.jpg",
+    "image": "../assets/dragon.jpg",
+    "year": "2001",
+    "medium": "colored pencil"
+  },{
+    "id": 13,
+    "title": "Honu #3",
+    "thumbnail": "../assets/honu-3_thumb.jpg",
+    "image": "../assets/honu-3.jpg",
+    "year": "2014",
+    "medium": "acrylic on canvas"
+  },{
+    "id": 14,
+    "title": "Woman #602",
+    "thumbnail": "../assets/woman-602_thumb.jpg",
+    "image": "../assets/woman-602.jpg",
+    "year": "2013",
+    "medium": "digital"
+  },{
+    "id": 15,
+    "title": "Fish and Ferryman",
+    "thumbnail": "../assets/fish-and-ferryman_thumb.jpg",
+    "image": "../assets/fish-and-ferryman.jpg",
+    "year": "2013",
+    "medium": "digital"
+  },{
+    "id": 16,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 17,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 18,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 19,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 20,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 21,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 22,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 23,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 24,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 25,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 26,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 27,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 28,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 29,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 30,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 31,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 32,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 33,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 34,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 35,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 36,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 37,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 38,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 39,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 40,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 41,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 42,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 43,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 44,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 45,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 46,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 47,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 48,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 49,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },{
+    "id": 50,
+    "title": "Double O Seven",
+    "thumbnail": "../assets/double-o-seven_thumb.jpg",
+    "image": "../assets/double-o-seven.jpg",
+    "year": "2015",
+    "medium": "digital"
+  },
+]
