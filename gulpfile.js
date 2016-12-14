@@ -7,7 +7,7 @@ const minify = require('gulp-minify')
 gulp.task('styles', () => {
   gulp.src('./src/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./build/stylesheets/'))
+    .pipe(gulp.dest('./public/stylesheets/'))
 })
 
 gulp.task('scripts', function() {
@@ -15,7 +15,7 @@ gulp.task('scripts', function() {
     .pipe(babel({presets: ['es2015']}))
     .pipe(concat('main.js'))
     .pipe(minify())
-    .pipe(gulp.dest('./build/javascripts/'))
+    .pipe(gulp.dest('./public/javascripts/'))
 })
 
 gulp.task('watch', function() {
