@@ -1,23 +1,45 @@
-.posts_container {
+.post_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 40px auto;
+  align-items: center;
+  margin: 40px;
   width: 800px;
   height: 100%;
   background-color: $white;
   box-shadow: 2px 2px 8px $secondary-dark;
 
-  h2 {
-    align-self: center;
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 20px;
+    font-family: $primary-font;
+    letter-spacing: 2px;
+  }
+
+  .post-date {
+    color: $secondary-light;
+  }
+
+  .post-body {
+    display: flex;
+    flex-direction: column;
     margin: 40px auto;
-  }
 
-  ul {
-    margin: 0 auto 40px 40px;
-  }
+    h2 {
+      margin: 30px 40px 10px;
+    }
 
-  a {
-    cursor: pointer;
+    p {
+      margin: 10px 40px;
+      line-height: 1.3em;
+      color: $secondary-dark;
+    }
+
+    img {
+      margin: 10px auto;
+      width: auto;
+    }
   }
 }

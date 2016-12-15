@@ -21,6 +21,12 @@
     .project_detail-data--left {
       display: flex;
       flex-direction: column;
+      line-height: 1.5em;
+
+      .project-detail-technology {
+        color: $primary-dark;
+        font-style: italic;
+      }
     }
 
     .project_detail-data--right {

@@ -71,16 +71,6 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
-  .state('root.resources', {
-    url: '/resources',
-    views: {
-      'main': {
-        templateUrl: 'partials/resources.html',
-        controller: 'ResourcesController',
-        controllerAs: 'vm',
-      },
-    },
-  })
   .state('root.projects', {
     url: '/projects',
     views: {

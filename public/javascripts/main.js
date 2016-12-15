@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('portfolioApp', ['ui.router', 'angularMoment']).config(config).factory('artService', artService).factory('blogService', blogService).factory('messageService', messageService).factory('projectsService', projectsService).factory('resourcesService', resourcesService).controller('AboutController', AboutController).controller('ApplicationController', ApplicationController).controller('ArtController', ArtController).controller('BlogController', BlogController).controller('ContactController', ContactController).controller('ProjectsController', ProjectsController).controller('ResourcesController', ResourcesController);
+angular.module('portfolioApp', ['ui.router', 'angularMoment']).config(config).factory('artService', artService).factory('blogService', blogService).factory('messageService', messageService).factory('projectsService', projectsService).controller('AboutController', AboutController).controller('ApplicationController', ApplicationController).controller('ArtController', ArtController).controller('BlogController', BlogController).controller('ContactController', ContactController).controller('ProjectsController', ProjectsController);
 'use strict';
 
 config.$inject = ['$stateProvider', '$urlRouterProvider']; //'$locationProvider'
@@ -70,15 +70,6 @@ function config($stateProvider, $urlRouterProvider) {
         controllerAs: 'vm'
       }
     }
-  }).state('root.resources', {
-    url: '/resources',
-    views: {
-      'main': {
-        templateUrl: 'partials/resources.html',
-        controller: 'ResourcesController',
-        controllerAs: 'vm'
-      }
-    }
   }).state('root.projects', {
     url: '/projects',
     views: {
@@ -128,61 +119,6 @@ function config($stateProvider, $urlRouterProvider) {
 }
 'use strict';
 
-artService.$inject = ['$http'];
-
-function artService($http) {
-  var service = {};
-  service.getPictures = function () {
-    return $http.get('../../data/pictures.json');
-  };
-  return service;
-}
-'use strict';
-
-blogService.$inject = ['$http'];
-
-function blogService($http) {
-  var service = {};
-  service.getPosts = function () {
-    return $http.get('../../data/posts.json');
-  };
-  return service;
-}
-'use strict';
-
-messageService.$inject = ['$http', '$location'];
-
-function messageService($http, $location) {
-  var service = {};
-  service.sendMessage = function (message) {
-    return $http.post('https://portfolio-service.herokuapp.com/messages', message);
-  };
-  return service;
-}
-'use strict';
-
-projectsService.$inject = ['$http'];
-
-function projectsService($http) {
-  var service = {};
-  service.getProjects = function () {
-    return $http.get('../../data/projects.json');
-  };
-  return service;
-}
-'use strict';
-
-resourcesService.$inject = ['$http'];
-
-function resourcesService($http) {
-  var service = {};
-  service.getResources = function () {
-    return $http.get('../../data/resources.json');
-  };
-  return service;
-}
-'use strict';
-
 AboutController.$inject = [];
 
 function AboutController() {
@@ -211,12 +147,22 @@ function ArtController(artService) {
 }
 'use strict';
 
-BlogController.$inject = ['blogService', 'moment'];
+BlogController.$inject = ['blogService', '$stateParams', '$sce'];
 
-function BlogController(blogService, moment) {
+function BlogController(blogService, $stateParams, $sce) {
   var vm = this;
   blogService.getPosts().then(function (posts) {
-    return vm.posts = posts.data;
+    return vm.posts_2016 = posts.data;
+  });
+  blogService.getPost($stateParams.id).then(function (posts) {
+    return posts.data.forEach(function (post) {
+      if (post.id == Number.parseInt($stateParams.id)) {
+        vm.post = post;
+        blogService.getPostBody(vm.post.link).then(function (body) {
+          vm.post.body = $sce.trustAsHtml(body.data);
+        });
+      }
+    });
   });
 }
 'use strict';
@@ -281,12 +227,53 @@ function ProjectsController(projectsService, $state) {
 }
 'use strict';
 
-ResourcesController.$inject = ['resourcesService'];
+artService.$inject = ['$http'];
 
-function ResourcesController(resourcesService) {
-  var vm = this;
-  resourcesService.getArt().then(function (resources) {
-    console.log(resources);
-    vm.resources = resources;
-  });
+function artService($http) {
+  var service = {};
+  service.getPictures = function () {
+    return $http.get('../../data/pictures.json');
+  };
+  return service;
+}
+'use strict';
+
+blogService.$inject = ['$http'];
+
+function blogService($http) {
+  var service = {};
+
+  service.getPosts = function () {
+    return $http.get('../../data/posts.json');
+  };
+  service.getPost = function (id) {
+    return $http.get('../../data/posts.json');
+  };
+  service.getPostBody = function (link) {
+    return $http.get(link);
+  };
+
+  return service;
+}
+'use strict';
+
+messageService.$inject = ['$http', '$location'];
+
+function messageService($http, $location) {
+  var service = {};
+  service.sendMessage = function (message) {
+    return $http.post('https://portfolio-service.herokuapp.com/messages', message);
+  };
+  return service;
+}
+'use strict';
+
+projectsService.$inject = ['$http'];
+
+function projectsService($http) {
+  var service = {};
+  service.getProjects = function () {
+    return $http.get('../../data/projects.json');
+  };
+  return service;
 }

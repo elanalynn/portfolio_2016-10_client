@@ -5,7 +5,8 @@
     "title": "Ember Magic",
     "category": "Ember",
     "tags": ["JavaScript", "Ember"],
-    "blurb": "A beginner's perspective on Ember.",
-    "link": "./posts/2016-03-23_ember-magic"
+    "blurb": "A beginner's perspective on Ember",
+    "cover": "/assets/posts/2016/2016-03-23_ember-magic/_cover",
+    "link": "/data/posts/2016-03-23_ember-magic.html"
   }
 ]
