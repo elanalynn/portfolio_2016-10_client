@@ -128,7 +128,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1050px;
   max-width: 90%; }
   .projects-container .project_card {
     display: flex;
