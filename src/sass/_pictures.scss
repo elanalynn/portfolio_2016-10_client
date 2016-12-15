@@ -1,0 +1,27 @@
+.pictures_container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1050px;
+  max-width: 90%;
+
+  .picture_card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    box-shadow: 2px 2px 3px $secondary-dark;
+
+    .picture_card-title {
+      .picture_card-title {
+        display: none;
+      }
+
+      .picture_card-date {
+        display: none;
+      }
+    }
+  }
+}

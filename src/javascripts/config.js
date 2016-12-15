@@ -31,11 +31,21 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
-  .state('root.art', {
+  .state('root.pictures', {
     url: '/art',
     views: {
       'main': {
-        templateUrl: 'partials/art.html',
+        templateUrl: 'partials/pictures.html',
+        controller: 'ArtController',
+        controllerAs: 'vm',
+      },
+    },
+  })
+  .state('root.picture', {
+    url: '/art',
+    views: {
+      'main': {
+        templateUrl: 'partials/pictures.html',
         controller: 'ArtController',
         controllerAs: 'vm',
       },

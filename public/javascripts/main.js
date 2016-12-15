@@ -34,11 +34,20 @@ function config($stateProvider, $urlRouterProvider) {
         controllerAs: 'vm'
       }
     }
-  }).state('root.art', {
+  }).state('root.pictures', {
     url: '/art',
     views: {
       'main': {
-        templateUrl: 'partials/art.html',
+        templateUrl: 'partials/pictures.html',
+        controller: 'ArtController',
+        controllerAs: 'vm'
+      }
+    }
+  }).state('root.picture', {
+    url: '/art',
+    views: {
+      'main': {
+        templateUrl: 'partials/pictures.html',
         controller: 'ArtController',
         controllerAs: 'vm'
       }
@@ -141,8 +150,7 @@ ArtController.$inject = ['artService'];
 function ArtController(artService) {
   var vm = this;
   artService.getPictures().then(function (pictures) {
-    console.log(pictures);
-    vm.pictures = pictures;
+    vm.pictures = pictures.data;
   });
 }
 'use strict';

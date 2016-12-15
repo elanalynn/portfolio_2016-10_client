@@ -21,13 +21,13 @@ header {
   flex-direction: column;
   justify-content: center;
   background-image: url(../assets/main/header-bg.png);
-  background-size: cover;
-  font-family: "Lato", sans-serif;
-  color: #e5c217; }
+  background-size: cover; }
   header h1 {
     align-self: center;
     margin: 40px auto;
-    letter-spacing: 2px; }
+    font-family: "Lato", sans-serif;
+    color: #e5c217;
+    font-weight: 100; }
     header h1 span {
       color: #FFF; }
 
@@ -251,6 +251,33 @@ footer {
     .post_container .post-body img {
       margin: 10px auto;
       width: auto; }
+
+.pictures_container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1050px;
+  max-width: 90%; }
+  .pictures_container .picture_card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    box-shadow: 2px 2px 3px #40403e; }
+    .pictures_container .picture_card .picture_card-title .picture_card-title {
+      display: none; }
+    .pictures_container .picture_card .picture_card-title .picture_card-date {
+      display: none; }
+
+.picture_container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 900px;
+  max-width: 90%; }
 
 .contact_card {
   display: flex;
