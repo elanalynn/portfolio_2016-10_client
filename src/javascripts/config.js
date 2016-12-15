@@ -32,7 +32,7 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
     },
   })
   .state('root.pictures', {
-    url: '/art',
+    url: '/pictures',
     views: {
       'main': {
         templateUrl: 'partials/pictures.html',

@@ -35,7 +35,7 @@ function config($stateProvider, $urlRouterProvider) {
       }
     }
   }).state('root.pictures', {
-    url: '/art',
+    url: '/pictures',
     views: {
       'main': {
         templateUrl: 'partials/pictures.html',
