@@ -1,7 +1,7 @@
 <div class="posts_container">
   <h2>2016</h2>
   <ul>
-    <li ng-repeat="post in vm.posts_2016 | orderBy: -order">
+    <li ng-repeat="post in vm.posts_2016">
       <a ui-sref="root.post({ id: post.id })">
         <span class="posts-date">{{ post.date | amDateFormat: 'MMM DD' }}</span>
         <span class="posts-separator">&nbsp; | &nbsp;</span>

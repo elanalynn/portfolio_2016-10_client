@@ -1,6 +1,6 @@
 <div class="post_container">
   <div class="post_cover">
-    <img src="/assets/posts/2016/2016-03-23_ember-magic/_cover.jpg" border="0" alt="Ember">
+    <img ng-src="{{vm.post.cover}}" border="0" alt="vm.post.title">
   </div>
   <h1>{{ vm.post.title }}</h1>
   <p class="post-date">Posted <span am-time-ago="vm.post.date"></span></p>

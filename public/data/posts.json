@@ -1,12 +1,21 @@
 [
   {
-    "id": 1,
+    "id": 2,
     "date": "2016-03-23",
     "title": "Ember Magic",
     "category": "Ember",
     "tags": ["JavaScript", "Ember"],
     "blurb": "A beginner's perspective on Ember",
-    "cover": "/assets/posts/2016/2016-03-23_ember-magic/_cover",
+    "cover": "/assets/posts/2016/2016-03-23_ember-magic/_cover.png",
     "link": "/data/posts/2016-03-23_ember-magic.html"
+  },{
+    "id": 1,
+    "date": "2016-03-20",
+    "title": "Web Components are Neat",
+    "category": "Ember",
+    "tags": ["web components", "DOM"],
+    "blurb": "An introduction to web components",
+    "cover": "/assets/posts/2016/2016-03-20_web-components/_cover.png",
+    "link": "/data/posts/2016-03-20_web-components.html"
   }
 ]

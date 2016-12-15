@@ -1,0 +1,294 @@
+<p>Developers are lazy. At least the good ones are. Beyond that, we have too much to do and too little time. For both of these reasons, we are constantly searching for ways to use less effort to create more results and we do this by finding patterns in the way that we build things. We then use those patterns to invent ways to build those things faster.</p>
+
+<p>These are some of the reasons that web components exist today and why they’re quickly becoming ubiquitous across the web. They’re still pretty new to me, but let me tell you what I know about them.</p>
+
+<h2>What exactly are Web Components?</h2>
+
+<p>Web components are basically reusable UI elements. Made up of several different technologies, they make it easier for a developer to quickly build applications. This means that anyone can create a component, like a navbar or a search box, once and then use it over and over again with minimal effort. There are also libraries of prebuilt components that are ready to use and easy to customize if need be.</p>
+
+<img src="/assets/posts/2016/2016-03-20_web-components/legos-and-components.png" alt="Just like legos!">
+
+<h2>Why use Web Components?</h2>
+
+<p>I got right to the laziness issue and I touched on the fact that there isn’t enough time in the world to build everything that we need to build, but what about more concrete reasons?</p>
+
+<p>Here are a few real problems that web components solve:</p>
+
+<ul>
+  <li>
+    <span class="bold">Undescriptive markup</span> - Sure, we have HTML5 with its semantic markup that includes articles and asides, but how many of your app’s parts actually fit within the limited vocabulary of this developing standard? With web components, you can name the elements that you are going to use with a name that actually makes sense in your context.
+  </li>
+  <li>
+  <span class="bold">Style conflicts</span> - The web component spec takes advantage of the shadow DOM (Which we will get to shortly) so that the scope of each component is isolated. It makes it possible to build more modular apps without the fear of breaking everything with a rogue style definition.
+  No native template standards - We’ve been using all kinds of markup templating solutions and we all have our favorites, but the idea that web components will standardize an easier way to write fast markup will make life easier for everyone.
+  </li>
+  <li>
+  <span class="bold">No native bundling</span> - I’ve mentioned that web components are made up of multiple technologies and I’ll get to those in the next section, but for now, know that a web component can effectively bundle HTML, CSS and JavaScript and you can import the entire thing with one simple import statement.
+  </li>
+</ul>
+
+<h2>The Four Technologies of Web Components</h2>
+
+<ol>
+  <li><p class="bold">templates</p> - define inert reusable markup</li>
+  <li><p class="bold">custom elements</p> - extend HTML</li>
+  <li><p class="bold">shadow DOM</p> - provides encapsulation of markup and styling</li>
+  <li><p class="bold">imports</p> - support bundling html, javascript and CSS files</li>
+</ol>
+
+<p class="italic">Side note: these technologies are not yet supported in all major browsers. Chrome does have full native support and you can use polyfill libraries like webcomponents.js to implement web components in other browsers</p>
+
+
+<h2>Templates</h2>
+
+<p>In this section, I’m going to introduce the <code>&lttemplate&gt</code> tag, show you how to activate it and how to inject dynamic data.</p>
+
+<h2>The Template Tag</h2>
+
+<p>This is it:</p>
+
+<p><code>&lttemplate&gt... &lt/template&gt</code></p>
+
+<p>It looks like a regular HTML tag, but it’s special. All markup inside the template tag is inert until it is cloned and utilized on the page. The content is hidden from traditional selection techniques because it is not traversed like other DOM elements. In order to access the elements inside, you have to use the content property of the template.</p>
+
+<p>You can place the template tag anywhere on the page (head, body, etc.). For example, I might make place a template block that looks like this right after my opening body tag:</p>
+
+<p>
+  <code>
+    &lttemplate id="my-template"&gt
+      &ltp&gt I'm coming from a template. &lt/p&gt
+    &lt/template&gt
+  </code>
+</p>
+
+<p>To activate the template, I use JavaScript. I need to target and select the template, clone it (meaning copy its content) and then append it to the page. The code would look like this:</p>
+
+	var template = document.querySelector(#my-template);
+	var clone = document.importNode(template.content, true);
+	document.body.appendChild(clone);
+
+<p>Passing template.content in as the first parameter of the importNode method clones the content of the template. The second parameter of importNode determines whether it is a deep copy.</p>
+
+<p>All together now…</p>
+
+<p>
+  <code>
+    &lttemplate&gt
+  		&ltp&gt I'm coming from a template. &lt/p&gt
+  	&lt/template&gt
+
+  	&ltscript&gt
+  		var template = document.querySelector('#my-template');
+  		var clone = document.importNode(template.content, true);
+  		document.body.appendChild(clone);
+  	&lt/script&gt
+  </code>
+</p>
+
+<h2>Inject Dynamic Data into Templates</h2>
+
+<p>You can inject data before cloning the template’s content by manipulating the template clone. First, you would get a reference to the template, then use document.importNode to clone the template’s content. Next, change the target element within the template as desired and, finally, append the element to the page. For example:</p>
+
+<p>
+  <code>
+  	&lttemplate&gt
+  		&ltp&gtDucks are &ltspan class="adjective"&gt&lt/span&gt!&lt/p&gt
+  	&lt/template
+
+  	&ltbutton onclick="copyTemplate()"&gtCopy Template&lt/button&gt
+
+  	&ltscript&gt
+  		function copyTemplate() {
+  			var template = document.querySelector('template');
+  			var clone = document.importNode(template.content, true);
+  			clone.querySelector('.adjective').textContent = 'awesome';
+  			document.body.appendChild(clone);
+  		}
+  	&lt/script&gt
+  </code>
+</p>
+
+
+<p>This code will append this paragraph to the page:</p>
+
+	<p>Ducks are awesome!</p>
+
+<h2>Custom Elements</h2>
+
+<img src="/assets/posts/2016/2016-03-20_web-components/lego-car.png" alt="Just like legos!">
+
+<p>Custom elements are a newish way of creating your own HTML tags and elements. They are part of web components but can be used on their own and there are a couple ways to implement them. You can either define your own HTML element (note that the name must have a dash -think of the first dash as a namespace) or extend existing elements by adding an ‘is’ attribute. For example:</p>
+
+<p>
+  <code>
+    &ltinput type="text" is="search"&gt
+  </code>
+</p>
+
+<h2>Register and Use Custom Elements</h2>
+
+<p>Register and use custom element with a simple three step process:</p>
+
+<ul>
+
+<li>Create a prototype for the custom element:</li>
+
+<p>
+  <code>
+     var custom-element = Object.create(HTMLElement.prototype);
+     //Add properties and functions to prototype here
+  </code>
+</p>
+
+<p class="italic">Note that when creating new custom elements with the Object.create method, the parameter that you pass in will usually be HTMLElement.prototype since custom elements are derived from a prototype. The exception is when you are extending an HTML element - in that case you would pass that element prototype in as an argument instead.</p>
+
+<li>Register the element via the registerElement method:</li>
+
+<p>
+  <code>
+    document.registerElement('custom-element');
+  </code>
+</p>
+
+<li>Use it: Add to DOM or place tag on the page</li>
+
+<p>
+  <code>
+    document.body.appendChild(new customElement());
+  </code>
+</p>
+
+<p>or</p>
+
+<p>
+  <code>
+    &ltcustom-comment/&gt
+  </code>
+</p>
+
+</ul>
+
+<h2>Instantiate Custom Elements</h2>
+
+<p>There are four different ways to instantiate a Custom Element</p>
+
+<ol>
+
+<li>Create a tag in the markup</li>
+
+<p>
+  <code>
+      &ltcustom-comment /&gt
+  </code>
+</p>
+
+<li>new Operator (You would need to append it to the DOM separately)</li>
+
+<p>
+  <code>
+    var comment = new customComment();
+  </code>
+</p>
+
+<li>createElement</li>
+
+<p>
+  <code>
+    var comment = document.createElement('custom-comment');
+  </code>
+</p>
+
+<li>innerHTML</li>
+
+<p>
+  <code>
+    el.innerHTML = '&ltcustom-comment /&gt;
+  </code>
+</p>
+
+</ol>
+
+<h2>Shadow DOM</h2>
+
+<img src="/assets/posts/2016/2016-03-20_web-components/shadow-guard.png" alt="Just like legos!">
+
+<p>Finally, we get to the Shadow DOM! How exciting! The shadow DOM provides encapsulation for the JavaScript, CSS and templating in a Web Component. A Shadow DOM makes it so these things remain separate from the DOM of the main document. A Shadow DOM must always be attached to an existing element.</p>
+
+<p>Before moving on, take a minute to open the settings in your browser Dev Tools. Under ‘Elements’, click on ‘Show user agent Shadow DOM’. This will allow you to see the shadow DOM of native controls.</p>
+
+<img src="/assets/posts/2016/2016-03-20_web-components/show-shadow-dom.png" alt="Just like legos!">
+
+<p>And, before we move on together, let me introduce some vocabulary so we are sure we can be sure that we are speaking the same language.</p>
+
+<ul>
+  <li><span class="bold">light DOM</span> - the standard DOM - what you see on the page</li>
+  <li><span class="bold">shadow DOM</span> - hides away complexity</li>
+  <li><span class="bold">logical DOM</span> - umbrella term that covers both light and shadow DOM</li>
+  <li><span class="bold">shadow root</span> - the root node of a shadow tree</li>
+  <li><span class="bold">shadow host</span> - the element in the light DOM that hosts the shadow DOM</li>
+  <li><span class="bold">shadow boundary</span> - encapsulates styling rules that are defined within a given piece of the shadow DOM (there are some ways to get around this)</li>
+</ul>
+
+<p>Got that? Great. Let’s create a Shadow DOM.</p>
+
+<h2>Create a Shadow DOM</h2>
+
+<p>It’s another three step process:</p>
+
+<ol>
+  <li>Select a shadow host</li>
+  <li>Create a shadow root</li>
+  <p>Add elements (the same way that you append elements to the light DOM)</p>
+</ol>
+
+<p>
+  <code>
+     &lttemplate&gt
+         &lth1&gtHello world from the shadow DOM&lt/h1&gt
+     &lt/template&gt
+
+     &ltdiv id="host"&gt
+         &ltscript&gt
+             var host = document.querySelector('template');
+             var root = host.createShadowRoot();
+             root.appendChild(document.importNode(template.content, true));
+         &lt/script&gt
+     &lt/div&gt
+  </code>
+</p>
+
+<p>As the Shadow DOM encapsulates its own elements and their styles, regular styling will not work on the shadow DOM. You can, however, define styles within the template tag that will only affect the shadow DOM. JavaScript, on the other hand, is not encapsulated in the Shadow DOM. Any Javascript that is defined within the tempate tag will still be traversed and manipulated with the light DOM and be attached to the window element. The markup inside the shadow DOM is still protected from JavaSript manipulation because it cannot be traversed with traditional selection methods. You can use IIFEs to encapsulate code.</p>
+
+<h2>Imports</h2>
+
+<img src="/assets/posts/2016/2016-03-20_web-components/lego-imports.png" alt="Just like legos!">
+
+<p>Both templates and imports are a way to store inert HTML, but imports have two unique qualities:</p>
+
+<ul>
+  <li>They support storing HTML in another file</li>
+  <li>They support bundling HTML, CSS and JavaScript</li>
+  <li>Using Imports</li>
+</ul>
+
+	<p>
+    <code>
+      &ltlink rel="import" href="component.html"&gt
+    </code>
+  </p>
+
+<p>This code brings in everything that is in the ‘import location’ identified by the href attribute in the link tag. Imported HTML is inert until you clone it onto the page. Imported JavaScript and CSS are applied immediately.</p>
+
+<h2>Now What?</h2>
+
+<p>This was just the beginning. Hopefully you have a better understanding of what a web component is and what it’s made of. There is a lot more studying to.</p>
+
+<p>Check out these resources for more info:</p>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components on MDN</a></li>
+  <li><a href="http://webcomponents.org">WebComponents.org</a></li>
+  <li><a href="https://www.polymer-project.org/1.0/">Polymer-Project</a></li>
+</ul>
+
+<p>Have you used web components in any of your projects? What has your experience been?</p>
