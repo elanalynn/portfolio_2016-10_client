@@ -42,10 +42,10 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
     },
   })
   .state('root.picture', {
-    url: '/art',
+    url: '/pictures/:id',
     views: {
       'main': {
-        templateUrl: 'partials/pictures.html',
+        templateUrl: 'partials/picture.html',
         controller: 'ArtController',
         controllerAs: 'vm',
       },

@@ -1,8 +1,13 @@
 .picture_container {
-  margin-top: 40px;
+  margin: 40px auto;
+  background-color: $white;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
   width: 900px;
   max-width: 90%;
+
+  img {
+    margin: 40px auto;
+    width: 100%;
+  }
 }

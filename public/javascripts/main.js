@@ -44,10 +44,10 @@ function config($stateProvider, $urlRouterProvider) {
       }
     }
   }).state('root.picture', {
-    url: '/art',
+    url: '/pictures/:id',
     views: {
       'main': {
-        templateUrl: 'partials/pictures.html',
+        templateUrl: 'partials/picture.html',
         controller: 'ArtController',
         controllerAs: 'vm'
       }
@@ -145,12 +145,19 @@ function ApplicationController($state) {
 }
 'use strict';
 
-ArtController.$inject = ['artService'];
+ArtController.$inject = ['artService', '$stateParams'];
 
-function ArtController(artService) {
+function ArtController(artService, $stateParams) {
   var vm = this;
   artService.getPictures().then(function (pictures) {
-    vm.pictures = pictures.data;
+    return vm.pictures = pictures.data;
+  });
+  artService.getPictures($stateParams.id).then(function (pictures) {
+    return pictures.data.forEach(function (picture) {
+      if (picture.id == Number.parseInt($stateParams.id)) {
+        vm.picture = picture;
+      }
+    });
   });
 }
 'use strict';
