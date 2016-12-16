@@ -212,7 +212,8 @@ footer {
       font-weight: normal;
       text-transform: uppercase;
       font-size: .9em;
-      color: #BE9400; }
+      color: #BE9400;
+      font-family: "Space Mono", sans-serif; }
     .posts_container a .posts-separator, .posts_container a .posts-blurb {
       font-weight: normal;
       font-size: .9em;
@@ -246,7 +247,7 @@ footer {
       font-weight: 700; }
     .post_container .post-body p, .post_container .post-body ul, .post_container .post-body ol, .post_container .post-body li {
       margin: 10px 40px;
-      line-height: 1.3em;
+      line-height: 1.5em;
       color: #40403e; }
     .post_container .post-body img {
       margin: 10px auto;

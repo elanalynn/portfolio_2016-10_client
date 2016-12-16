@@ -1,6 +1,24 @@
 [
   {
-    "id": 2,
+    "id": 5,
+    "date": "2016-11-28",
+    "title": "Learning how to Learn",
+    "category": "lerning",
+    "tags": [""],
+    "blurb": "Advice for getting the most out of studying",
+    "cover": "/assets/posts/2016/2016-11-25_learning-how-to-learn/_cover.png",
+    "link": "/data/posts/2016-11-25_learning-how-to-learn.html"
+  },{
+    "id": 4,
+    "date": "2016-07-28",
+    "title": "Build a Full Stack App in 40 Minutes",
+    "category": "Ember",
+    "tags": ["JavaScript", "SQLite"],
+    "blurb": "An intro to web development for beginners",
+    "cover": "/assets/posts/2016/2016-07-26_build-a-full-stack-app-in-40-minutes/_cover.png",
+    "link": "/data/posts/2016-07-26_build-a-full-stack-app-in-40-minutes.html"
+  },{
+    "id": 3,
     "date": "2016-03-23",
     "title": "Ember Magic",
     "category": "Ember",
@@ -9,7 +27,7 @@
     "cover": "/assets/posts/2016/2016-03-23_ember-magic/_cover.png",
     "link": "/data/posts/2016-03-23_ember-magic.html"
   },{
-    "id": 1,
+    "id": 2,
     "date": "2016-03-20",
     "title": "Web Components are Neat",
     "category": "Ember",
@@ -17,5 +35,14 @@
     "blurb": "An introduction to web components",
     "cover": "/assets/posts/2016/2016-03-20_web-components/_cover.png",
     "link": "/data/posts/2016-03-20_web-components.html"
+  },{
+    "id": 1,
+    "date": "2016-01-28",
+    "title": "Jekyll Blog",
+    "category": "Jekyll",
+    "tags": ["Jekyll"],
+    "blurb": "Build a blog quickly with Jekyll",
+    "cover": "/assets/posts/2016/2016-01-28_jekyll-blog/_cover.png",
+    "link": "/data/posts/2016-01-28_jekyll-blog.html"
   }
 ]

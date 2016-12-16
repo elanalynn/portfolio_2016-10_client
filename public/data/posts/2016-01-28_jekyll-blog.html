@@ -1,0 +1,87 @@
+<p class="italic">I originally wrote this post on another blog called Reason About. I created that blog as a student with the purpose of having a collaborative platform for my peers and I to share our newfound knowledge. When I refer to 'this blog' below I am referring to that other blog that was built with Jekyll.</p>
+
+<p>Creating this blog led me to learn a few things about how to set up a site with Jekyll. It only makes sense that I get meta with my first proper contribution and tell you how I did it.</p>
+
+<p>In this post, I’ll cover:</p>
+
+<ul>
+  <li>Installing Jekyll and starting a project</li>
+  <li>Navigating around a Jekyll project</li>
+  <li>Adding a post</li>
+  <li>Getting Started with Jekyll</li>
+</ul>
+
+<p>Here are all five of the steps to setting up a local Jekyll site:</p>
+
+<ol>
+  <li>If you don’t have Ruby installed, install Ruby: brew install ruby (OSX)</li>
+  <li>Install Jekyll: gem install Jekyll</li>
+  <li>Create a Jekyll project locally: Jekyll new my-awesome-site</li>
+  <li>Navigate into your new project: cd my-awesome-site</li>
+  <li>Serve your project locally: Jekyll serve</li>
+  <li>You will find your site running at:<code> http://localhost:4000</code>.</li>
+</ol>
+
+<p>I’m hosting this site on GitHub pages and redirecting to a custom domain. I’m not going to cover that today, but I will in a future post.</p>
+
+<h2>Navigating around Jekyll</h2>
+
+<p>This is what your project might look like:</p>
+
+<img src="" alt="Jekyll Site Structure">
+
+<p>Keep three things in mind as you start working in your Jekyll project:</p>
+
+<ul>
+  <li>Do not edit anything in the <code>_site</code> directory</li>
+  <li>Do not edit anything in the <code>_site</code> directory</li>
+  <li>Do not edit anything in the <code>_site</code> directory</li>
+</ul>
+
+<p>The <code>_site</code> directory is your generated public directory. You generally don’t want to mess with generated files.</p>
+
+<p>Okay, now for the rest of the project…</p>
+
+<p>The site generator creates a few very useful directories and files for you:</p>
+
+<ul>
+  <li><span class="bold">_config.yml</span> - This file contains basic info about your site. Open it up and fill in the blanks. You won’t need to edit this one often.</li>
+
+  <li><span class="bold">_posts directory</span> - This is where you add your posts as markup files. I’ll cover that in more detail in the next section</li>
+
+  <li><span class="bold">about.md</span> - This is what is sounds like. Fill this page in with the content for your about page.
+  Adding a Post</li>
+</ul>
+
+
+<p>If you’re used to blogging with a rich text editor, you will need to shift your workflow a bit. If you feel uncomfortable whenever you have to leave your text editor or terminal, then this is the platform for you. Jekyll posts are just markup. I’m using markdown, so I’ll focus on that, but you can use also HTML or textile (with the proper extensions).</p>
+
+<p>Writing a blog on a Jekyll site is as easy as adding a markup file to the _posts directory.</p>
+
+<p>A couple things to keep in mind:</p>
+
+<p>Your file name matters! Start with the date in kebab case (YYYY-MM-DD) and continue with the file name, also connected with dashes. It should look like this:</p>
+
+<p><code>YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>For example:</p>
+
+<p><code>2016-01-27-ek-welcome-to-reason-about.md</code></p>
+
+<p>Also, I’m not sure if I mentioned this before, but you should definitely, never ever edit anything in the _site directory</p>
+
+<p>Inside the file:</p>
+
+<p>The first thing in every one of your posts will be “YAML front matter”. This is the metadata about the post and it’s really important. This post’s front matter looks like this:</p>
+
+<p>YAML front matter</p>
+
+<p>When you create a new post, make sure to include this section with the appropriate data.</p>
+
+<h2>Adding images and documents:</h2>
+
+<p>When you set up a project, you won’t have a default place to store images and files, but the Jekyll docs recommend creating an assets folder. You will need to manually create a file structure inside of it to keep things organized. Our asset folder is organized by contributor, then year, then month.</p>
+
+<p>YAML front matter</p>
+
+<p>In summary, do not edit anything in the _site directory. Also, Jekyll is quite easy to use and pretty cool.</p>
