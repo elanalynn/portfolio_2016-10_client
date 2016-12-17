@@ -1,11 +1,10 @@
 <div class="pictures_container">
   <div class="picture_card" ng-repeat="picture in vm.pictures">
-    <a ui-sref="root.picture({ id: picture.id })">
-      <div class="picture_card-media">
-        <img ng-src="{{ picture.thumbnail }}" alt="{{ picture.thumbnail }}">
-        <h3 class="picture_card-title">{{ picture.title }}</h3>
-        <p class="picture_card-date">{{ picture.date }}</p>
-      </div>
-    </a>
+    <img ng-src="{{ picture.thumbnail }}" alt="{{ picture.thumbnail }}">
+    <div ui-sref="root.picture({ id: picture.id })" class="picture_card-overlay">
+      <h2>{{ picture.title }}</h2>
+      <p>{{ picture.year }}</p>
+      <p>{{ picture.medium | uppercase }}</p>
+    </div>
   </div>
 </div>

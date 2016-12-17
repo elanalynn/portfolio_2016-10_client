@@ -3,8 +3,6 @@ ProjectsController.$inject = ['projectsService', '$state']
 function ProjectsController(projectsService, $state){
   var vm = this
 
-  console.log($state.current.name)
-
   projectsService.getProjects().then(projects => {
     vm.projectList = projects.data
 

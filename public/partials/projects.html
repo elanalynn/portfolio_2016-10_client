@@ -1,7 +1,9 @@
-<div class="projects-container">
+<div class="projects_container">
   <div class="project_card" ng-repeat="project in vm.projectList">
-    <a ui-sref="{{ project.detail }}">
-      <img ng-src="{{ project.thumbnail }}" alt="{{ project.thumbnail }}">
-    </a>
+    <img ng-src="{{ project.thumbnail }}" alt="{{ project.thumbnail }}">
+    <div ui-sref="{{ project.detail }}" class="project_card-overlay">
+      <h2>{{ project.name }}</h2>
+      <p>{{ project.description }}</p>
+    </div>
   </div>
 </div>
