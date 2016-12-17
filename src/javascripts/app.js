@@ -1,5 +1,5 @@
 angular
-  .module('portfolioApp', ['ui.router', 'angularMoment'])
+  .module('portfolioApp', ['ui.router', 'ngAnimate', 'angularMoment'])
   .config(config)
   .factory('artService', artService)
   .factory('blogService', blogService)
