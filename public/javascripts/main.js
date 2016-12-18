@@ -3,14 +3,13 @@
 angular.module('portfolioApp', ['ui.router', 'ngAnimate', 'angularMoment']).config(config).factory('artService', artService).factory('blogService', blogService).factory('messageService', messageService).factory('projectsService', projectsService).controller('AboutController', AboutController).controller('ApplicationController', ApplicationController).controller('ArtController', ArtController).controller('BlogController', BlogController).controller('ContactController', ContactController).controller('ProjectsController', ProjectsController);
 'use strict';
 
-config.$inject = ['$stateProvider', '$urlRouterProvider']; //'$locationProvider'
+config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
-function config($stateProvider, $urlRouterProvider) {
-  // $locationProvider
-  // $locationProvider.html5Mode({
-  //   enabled: true,
-  //   requireBase: false,
-  // })
+function config($stateProvider, $urlRouterProvider, $locationProvider) {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
   $urlRouterProvider.otherwise('/projects');
   $stateProvider.state('root', {
     views: {
