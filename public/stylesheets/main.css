@@ -86,6 +86,8 @@ footer {
   height: 20px;
   color: #fff;
   padding: 10px 40px; }
+  footer .footer--right a {
+    color: #fff; }
 
 .button {
   padding: 10px 15px;
