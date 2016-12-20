@@ -131,4 +131,8 @@ function config($stateProvider, $urlRouterProvider) { // $locationProvider
       },
     },
   })
+  .state('shad', {
+    url: '/shad',
+    templateUrl: 'partials/shad.html',
+  })
 }

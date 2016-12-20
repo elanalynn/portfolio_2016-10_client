@@ -394,6 +394,17 @@ footer {
     left: 600px;
     transform: rotateZ(405deg); } }
 
+.shad-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #116499; }
+  .shad-container h1 {
+    color: #e5c217;
+    margin-top: 300px; }
+
 body {
   background-color: #e5c217;
   font-family: "Open Sans", sans-serif;
