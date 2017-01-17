@@ -2,36 +2,28 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../assets/main/header-bg.png);
-  background-size: cover;
+  background-color: rgba(55, 55, 52, 0.8);
 
-  h1 {
+  h1, h2 {
     align-self: center;
-    margin: 40px auto;
     font-family: $primary-font;
-    color: $primary-light;
     font-weight: 100;
+    margin: 20px auto;
+    color: $primary-light;
 
-    span {
-      color: #FFF;
+    .separator {
+      font-size: 1.3em;
+      color: #000;
+    }
+
+    .title {
+      color: $white;
+      margin-bottom: 20px;
     }
   }
+
+
 }
-
-// .is-compact .nav-row--large {
-//   min-height: auto;
-//   display: hidden;
-// }
-
-// .logo {
-//   height: 100px;
-//   width: 100px;
-// }
-
-// .is-compact .logo {
-//   height: 30px;
-//   width: 30px;
-// }
 
 .nav--drawer {
   display: flex;;
